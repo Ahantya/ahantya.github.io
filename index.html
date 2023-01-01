@@ -4,29 +4,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="https://codehs.com/uploads/8bd390c16694254b0c70d00b6747a85e">
   <style>
-    .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-}
-
-        /* Style the navbar */
+    /* Style the navbar */
     .navbar {
       overflow: hidden;
-      background-color: #181515;
+      background-color: black;
       font-family: Arial, sans-serif;
       height: 183px;
       /* Remove fixed positioning */
@@ -40,7 +21,7 @@
     .navbar a {
       float: left;
       font-size: 16px;
-      color: EE1010;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -101,11 +82,31 @@
       display: block;
       text-align: left;
     }
-    
-  
   </style>
 </head>
 <body>
+  <!-- Add a navbar to the top of the page -->
+  <div class="navbar">
+    <!-- Add the logo -->
+    <div class="logo">Logo</div>
+    <!-- Add the links -->
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  
+  <!-- Add the dropdown menu -->
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+    </div>
+  </div>
+  </div>
+  
   <div class="dropdown">
   <a class="dropdown-link" href="#">Hover for menu</a>
   <div class="dropdown-content">
@@ -120,3 +121,5 @@
   
 </body>
 </html>
+
+  
