@@ -22,6 +22,86 @@
   display: block;
 }
 
+        /* Style the navbar */
+    .navbar {
+      overflow: hidden;
+      background-color: #181515;
+      font-family: Arial, sans-serif;
+      height: 183px;
+      /* Remove fixed positioning */
+     /* position: fixed; */
+     /* top: 0; */
+     /* width: 100%; */
+     /* z-index: 1; */
+    } 
+    
+    /* Style the navbar links */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: EE1010;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Style the logo */
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4d94ff;
+    }
+
+    /* Style the social media icons */
+    .navbar .fa {
+      font-size: 20px;
+      margin-top: 8px;
+      color: red;
+      padding-right: 10px;
+    }
+
+    /* Style the dropdown menu */
+    .navbar .dropdown {
+      float: right;
+    }
+
+    /* Style the dropdown button */
+    .navbar .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: red;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+     /* Style the dropdown content (hidden by default) */
+  .navbar .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+  }
+
+    /* Style the dropdown content on hover and focus */
+  .navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+  }
+
+    /* Style the dropdown links */
+    .navbar .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+  
   </style>
 </head>
 <body>
