@@ -8,30 +8,23 @@
     /* Style the navbar */
     .navbar {
       overflow: hidden;
-      background-color: black;
+      background-color: white;
       font-family: Arial, sans-serif;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
       /* Remove fixed positioning */
      position: fixed; 
      top: 0; 
      width: 100%; 
      z-index: 1; 
     } 
-    
-    /* Style the Logo */
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #4d94ff;
-    }
 
     /* Style the navbar links */
     .navbar a {
       float: left;
       font-size: 16px;
-      color: white;
+      color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -39,10 +32,17 @@
 
     /* Style the logo */
     .navbar .logo {
+      .navbar .logo {
       font-size: 20px;
       font-weight: bold;
       color: #4d94ff;
+      position: absolute; /* specify position as absolute */
+      top: 50%; /* center the element vertically */
+      left: 50%; /* center the element horizontally */
+      transform: translate(-50%, -50%); /* adjust the position */
     }
+
+
 
     /* Style the social media icons */
     .navbar .fa {
