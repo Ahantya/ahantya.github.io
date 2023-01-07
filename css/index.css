@@ -4,7 +4,6 @@
   background-color: #181515;
   font-family: Arial, sans-serif;
   height: 268px;
-  position:fixed;
   /* Remove fixed positioning */
   /* position: fixed; */
   /* top: 0; */
@@ -95,7 +94,5 @@
 
 header {
   text-align: center;
-  position: relative;
-  top: 50px;
   
 }
