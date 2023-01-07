@@ -4,7 +4,6 @@
   background-color: #181515;
   font-family: Arial, sans-serif;
   height: 268px;
-  margin-top: 40px;
   /* Remove fixed positioning */
   /* position: fixed; */
   /* top: 0; */
@@ -40,6 +39,7 @@
 /* Style the dropdown menu */
 .navbar .dropdown {
   text-align: center;
+  padding-right: 50px;
   float: left;
   display: flex;
   flex-direction: column;
