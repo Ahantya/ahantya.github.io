@@ -59,8 +59,8 @@
 
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
