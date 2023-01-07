@@ -59,16 +59,16 @@
 
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
 /* Style the dropdown content on hover and focus */
 .navbar .dropdown:hover .dropdown-content,
 .navbar .dropdown:focus .dropdown-content {
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
