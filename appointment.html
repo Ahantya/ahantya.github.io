@@ -37,13 +37,15 @@
       <input type="time" id="time" name="time" required><br>
       <!-- Submit button -->
       <button type="submit" class="submit-button">Submit</button>
-    </form> 
+    </form>
   </div>
-
   <script>
-    window.setTimeout(function () {
-      window.location.href = 'https://ahantya.github.io';
-    }, 0);
-  </script>
+  if (window.location.href.includes("https://formspree.io/thanks")) {
+    window.location.replace("https://ahantya.github.io");
+  }
+</script>
+
+  
+  
 </body>
 </html>
