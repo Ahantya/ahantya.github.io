@@ -39,7 +39,7 @@
 /* Style the dropdown menu */
 .navbar .dropdown {
   text-align: center;
-  padding-left; 60px;
+  padding-left; 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
