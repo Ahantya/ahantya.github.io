@@ -106,8 +106,12 @@ h1 {
   text-align: center;
 }
 
-p {
+p1 {
   text-align: center;
+}
+
+p {
+  text-align: left;
 }
 
 body {
