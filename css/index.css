@@ -57,6 +57,17 @@
   text-align: center;
 }
 
+.dropdown {
+  width: 268px;
+  height: 95px;
+}
+
+.dropdown-content {
+  width: 268px;
+  height: 95px;
+}
+
+
 
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
