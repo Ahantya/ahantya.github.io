@@ -53,8 +53,6 @@
   text-decoration: none;
   display: fLex;
   text-align: center;
-  /* justify-content: center */
-  align-items: center;
 }
 
 /* Style the dropdown content on hover and focus */
@@ -123,11 +121,4 @@ body {
   .navbar {
     display: none;
   }
-}
-.navbar .logo {
-  display: none;
-}
-
-.navbar .dropdown:hover .logo {
-  display: block;
 }
