@@ -125,3 +125,7 @@ body {
   }
 }
 
+.navbar .dropdown:hover .logo {
+  visibility: hidden;
+}
+
