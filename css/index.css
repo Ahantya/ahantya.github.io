@@ -54,11 +54,12 @@
 }
 
 /* Style the dropdown content on hover and focus */
-.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown
+.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
   visibility: visible;
   opacity: 1;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
+
 
 .button1 {
   position: absolute;
