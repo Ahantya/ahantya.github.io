@@ -34,17 +34,23 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  /* Add display: flex and justify-content: center */
+  display: flex;
+  justify-content: center;
 }
+
 
 .navbar .dropdown {
   position: relative; /* add this */
   display: inline-block; /* add this */
 }
 
+/* Style the dropdown content */
 .navbar .dropdown-content {
-  position: absolute; /* add this */
-  top: 100%; /* add this */
-  left: 0; /* add this */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 268px;
+  height: 95px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
