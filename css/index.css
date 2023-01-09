@@ -49,10 +49,9 @@
 /* Style the dropdown content */
 .navbar .dropdown-content {
   display: flex;  /* Add this line */
-  align-items: center;  /* Add this line */
-  justify-content: center;  /* Add this line */
-  left: 50%;
-  transform: translateX(-50%);
+  flex-direction: column;  /* change to column */
+  align-items: center;  /* center items vertically */
+  justify-content: center;  /* center items horizontally */
   width: 268px;
   height: 95px;
   visibility: hidden;
@@ -61,6 +60,8 @@
   text-align: center;
   margin: 0 auto;
 }
+
+
 
 
 
