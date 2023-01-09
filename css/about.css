@@ -1,7 +1,3 @@
-body {
-  background-color: #23B6E6;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
 *{
@@ -11,7 +7,7 @@ body {
 }
 
 body{
-  background: #81c644;
+  background: #23B6E6;
   font-family: 'Josefin Sans', sans-serif;
 }
 
