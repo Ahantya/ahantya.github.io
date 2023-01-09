@@ -36,7 +36,7 @@
   margin: 0;
   /* Add display: flex and justify-content: center */
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 
