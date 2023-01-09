@@ -53,6 +53,27 @@
   <h3><span style="font-weight: 400; font-size: 25px; font-family: Arvo">Eco-friendly products</span></h3>
   <p><span style="font-weight: 400; font-family: Merriweather">We care about the environment and use only eco-friendly products to ensure that our cleaning services are safe for you and the planet. Our products are biodegradable and non-toxic, so you can trust that your home or business is being cleaned in a sustainable way.</span></p>
 
+
+<script>
+  // Select the logo element
+  const logo = document.querySelector('.navbar .logo');
+
+  // Select the dropdown menu element
+  const dropdownMenu = document.querySelector('.navbar .dropdown');
+
+  // Add a hover event listener to the dropdown menu
+  dropdownMenu.addEventListener('mouseover', () => {
+    // When the dropdown menu is hovered over, set the logo's visibility to 'hidden'
+    logo.style.visibility = 'hidden';
+  });
+
+  // Add a mouseout event listener to the dropdown menu
+  dropdownMenu.addEventListener('mouseout', () => {
+    // When the mouse leaves the dropdown menu, set the logo's visibility to 'visible'
+    logo.style.visibility = 'visible';
+  });
+</script>
+
 </body>
 </html>
   
