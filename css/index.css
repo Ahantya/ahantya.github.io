@@ -53,7 +53,7 @@
   text-decoration: none;
   display: fLex;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center */
   align-items: center;
 }
 
@@ -126,6 +126,5 @@ body {
 }
 
 .navbar .dropdown:hover .logo {
-  visibility: hidden;
+  display: none;
 }
-
