@@ -38,11 +38,10 @@
 
 /* Style the dropdown links */
 .navbar .dropdown-content a {
-  float: none;
+  display: block;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
   text-align: center;
 }
 
@@ -51,6 +50,7 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
+  text-align: center;
 }
 
 /* Style the dropdown content on hover and focus */
@@ -96,14 +96,3 @@ p {
 body {
   color: white;
 }
-
-@media only screen and (max-width: 500px) {
-  .navbar {
-    display: none;
-  }
-}
-
-.navbar .dropdown-content {
-  text-align: center;
-}
-
