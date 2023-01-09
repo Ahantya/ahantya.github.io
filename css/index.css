@@ -48,15 +48,18 @@
 
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-/* Style the dropdown content */
+/* Style the dropdown content on hover and focus */
 .navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-/* Style the button */
 .button1 {
   position: absolute;
   top: 15px;
@@ -69,40 +72,39 @@
   color: white;
 }
 
-/* Style the container */
+
 .container {
   position: relative;
 }
 
-/* Style the header */
 header {
   display: flex;
   justify-content: center;
 }
 
-/* Style the h1 element */
 h1 {
   text-align: center;
 }
 
-/* Style the p element */
 p {
   text-align: left;
 }
 
-/* Style the center class */
 .center {
   text-align: center;
 }
 
-/* Style the body */
 body {
   color: white;
 }
 
-/* Hide the navbar on small screens */
 @media only screen and (max-width: 500px) {
   .navbar {
     display: none;
   }
 }
+
+.navbar .dropdown-content {
+  text-align: center;
+}
+
