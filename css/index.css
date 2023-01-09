@@ -1,3 +1,8 @@
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+}
+
 /* Style the navbar */
 .navbar {
   overflow: hidden;
@@ -118,4 +123,11 @@ p {
 body {
   color: white;
 }
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+}
+
 
