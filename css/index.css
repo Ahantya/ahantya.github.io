@@ -8,7 +8,6 @@
   overflow: hidden;
   background-color: #181515;
   font-family: Arial, sans-serif;
-  height: 268px;
   /* Remove fixed positioning */
   /* position: fixed; */
   /* top: 0; */
@@ -51,7 +50,7 @@
   color: white; /* Add a color for the link text */
   padding: 12px 16px;
   text-decoration: none;
-  display: fLex;
+  display: block;
   text-align: center;
 }
 
