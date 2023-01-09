@@ -74,5 +74,6 @@ body{
 .company_info {
   width: 300px;
   text-align: center;
+  margin: 0 auto;
 }
 
