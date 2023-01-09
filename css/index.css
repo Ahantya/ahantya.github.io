@@ -1,18 +1,10 @@
-@media only screen and (max-width: 500px) {
-}
-@media only screen and (max-width: 500px) and (orientation: portrait) {
-}
-
 /* Style the navbar */
 .navbar {
-  overflow: hidden;
   background-color: #181515;
   font-family: Arial, sans-serif;
   /* Remove fixed positioning */
-  /* position: fixed; */
-  /* top: 0; */
-  /* width: 100%; */
-  /* z-index: 1; */
+  position: relative;
+  width: 100%;
 }
 
 /* Style the navbar links */
@@ -31,17 +23,18 @@
   font-weight: bold;
   color: #23B6E6;
 }
-    /* Style the dropdown button */
-    .navbar .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: red;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
+
+/* Style the dropdown button */
+.navbar .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: red;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
 /* Style the dropdown links */
 .navbar .dropdown-content a {
@@ -52,18 +45,19 @@
   display: block;
   text-align: center;
 }
+
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-    /* Style the dropdown content on hover and focus */
-.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
+/* Style the dropdown content on hover and focus */
+.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
 .button1 {
@@ -108,3 +102,8 @@ body {
     display: none;
   }
 }
+
+.navbar .dropdown-content {
+  text-align: center;
+}
+
