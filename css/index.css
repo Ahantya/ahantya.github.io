@@ -31,53 +31,40 @@
   font-weight: bold;
   color: #23B6E6;
 }
-
-/* Style the dropdown button */
-.navbar .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #23B6E6; /* Add a color for the button text */
-  background-color: #181515; /* Add a background color for the button */
-  padding: 14px 16px;
-  font-family: inherit;
-  margin: 0;
-}
+    /* Style the dropdown button */
+    .navbar .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: red;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
 
 /* Style the dropdown links */
 .navbar .dropdown-content a {
   float: none;
-  color: white; /* Add a color for the link text */
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: center;
+  text-align: left;
 }
-
-/* Style the dropdown content on hover and focus */
-.navbar .dropdown:hover .dropdown-content,
-.navbar .dropdown:focus .dropdown-content {
-  background-color: #181515; /* Add a background color for the content */
-}
-
-
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s ease-in-out;
-  max-height: 200px;
-  overflow: auto;
 }
 
-/* Style the dropdown content on hover and focus */
-.navbar .dropdown:hover .dropdown-content,
-.navbar .dropdown:focus .dropdown-content {
+    /* Style the dropdown content on hover and focus */
+.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
-
 
 .button1 {
   position: absolute;
