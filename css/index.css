@@ -124,7 +124,10 @@ body {
     display: none;
   }
 }
+.navbar .logo {
+  display: none;
+}
 
 .navbar .dropdown:hover .logo {
-  display: none;
+  display: block;
 }
