@@ -33,14 +33,34 @@
   color: #23B6E6;
 }
 
-/* Style the dropdown menu */
-.navbar .dropdown {
-}
-
 /* Style the dropdown button */
 .navbar .dropdown .dropbtn {
-
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #23B6E6; /* Add a color for the button text */
+  background-color: #181515; /* Add a background color for the button */
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
 }
+
+/* Style the dropdown links */
+.navbar .dropdown-content a {
+  float: none;
+  color: white; /* Add a color for the link text */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Style the dropdown content on hover and focus */
+.navbar .dropdown:hover .dropdown-content,
+.navbar .dropdown:focus .dropdown-content {
+  background-color: #181515; /* Add a background color for the content */
+}
+
 
 /* Style the dropdown content (hidden by default) */
 .navbar .dropdown-content {
@@ -57,9 +77,6 @@
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
-/* Style the dropdown links */
-.navbar .dropdown-content a {
-}
 
 .button1 {
   position: absolute;
