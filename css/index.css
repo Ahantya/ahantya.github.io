@@ -44,11 +44,13 @@
   position: relative; /* add this */
   display: inline-block; /* add this */
 }
+
+
 /* Style the dropdown content */
 .navbar .dropdown-content {
-  display: flex;
-  align-items: center; /* Add this */
-  justify-content: center;
+  display: flex;  /* Add this line */
+  align-items: center;  /* Add this line */
+  justify-content: center;  /* Add this line */
   left: 50%;
   transform: translateX(-50%);
   width: 268px;
@@ -57,10 +59,9 @@
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
   text-align: center;
-  margin: 0 auto;  /* Add this line */
-  top: 50%; /* Add this */
-  transform: translateY(-50%); /* Add this */
+  margin: 0 auto;
 }
+
 
 
 .dropdown {
