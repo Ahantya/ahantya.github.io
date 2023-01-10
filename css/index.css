@@ -131,6 +131,9 @@ body {
   color: white;
 }
 
+.footer-bg {
+  background-color: blue;
+}
 
 footer {
   background-color: #121315;
