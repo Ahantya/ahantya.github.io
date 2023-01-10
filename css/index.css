@@ -191,7 +191,7 @@ ul li a:hover {
 }
 .about p {
   text-align: justify;
-  line-height: 2;
+  line-height: 1.15;
   margin: 0;
 }
 input,
