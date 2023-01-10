@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+div {
+  width: 100%; /* Add this */
+}
+
 /* Style the navbar links */
 .navbar a { 
   float: left;
@@ -233,7 +237,7 @@ div.social {
   font-size: 0.9em;
   text-align: right;
 }
-@media screen {
+@media screen and (max-width: 850px) {
   .row.primary {
     grid-template-columns: 1fr;
   }
