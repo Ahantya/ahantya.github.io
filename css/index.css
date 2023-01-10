@@ -7,10 +7,6 @@
   width: 100%;
 }
 
-div {
-  width: 100%; /* Add this */
-}
-
 /* Style the navbar links */
 .navbar a { 
   float: left;
@@ -140,7 +136,6 @@ footer {
   background-color: #121315;
   color: #a7a7a7;
   font-size: 16px;
-  width: 100%;
 }
 footer * {
   font-family: "Poppins", sans-serif;
