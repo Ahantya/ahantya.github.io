@@ -282,6 +282,6 @@ a .button1 {
 
 /* Add an active class for the current page */
 .navbar a.active {
-  background-color: #00bfff;
+  background-color: #181515;
 }
 
