@@ -245,3 +245,23 @@ div.social {
   }
 
 }
+
+/* Add a class to the "Book An Appointment" button */
+a .button1 {
+  class: "book-appointment-button";
+}
+
+/* Add a class to the dropdown menu */
+.navbar .dropdown {
+  class: "dropdown-menu";
+}
+
+/* Style all buttons except the "Book An Appointment" button and the dropdown menu when hovered over */
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):hover {
+  background-color: #F0F0F0;
+}
+
+/* Style all buttons except the "Book An Appointment" button and the dropdown menu when clicked */
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):active {
+  background-color: #F0F0F0;
+}
