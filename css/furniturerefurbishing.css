@@ -49,6 +49,8 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .button2 {
@@ -64,6 +66,8 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .center {
