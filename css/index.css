@@ -301,61 +301,66 @@ a .button1 {
   height: 30px;
 }
 
-.faq-heading{
-    border-bottom: #777;
-    padding: 20px 60px;
+#card {
+    background: #fff;
+    color: #333;
+    margin: 10rem auto;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 30rem;
+    border-radius: 2rem;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
+#hero {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-55%);
 }
-.hr-line{
-  width: 62.7%;
-  margin: auto;
-  
+#hero .img {
+    filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+    transition: 0.3s ease-out;
 }
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-    /* background-color: #eee; */
-    color: #444;
+#card:hover .img {
+    filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+}
+#title {
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+}
+#acc-container {
+    padding: 4rem 2rem;
+}
+#acc-btn {
+    width: 100%;
+    padding: 1.6rem 2rem;
+    font-size: 1.6rem;
     cursor: pointer;
-    padding: 30px 20px;
-    width: 60%;
+    background: inherit;
     border: none;
     outline: none;
-    transition: 0.4s;
-    margin: auto;
+    text-align: left;
+    transition: all 0.5s linear;
 }
-
-{
-    margin: auto;
-    /* text-align: center; */
-   width: 50%; 
-   padding: auto;
-   
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.faq-page:active,
-.faq-page:hover {
-    background-color: #F9F9F9;
-}
-/* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-}
-.faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+#acc-btn:after {
+    content: "\27A4";
+    color: #fa8d0c;
     float: right;
-    margin-left: 5px;
+    transition: all 0.3s linear;
 }
-.faq-page:active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+#acc-btn.is-open:after {
+    transform: rotate(90deg);
 }
-
+#acc-btn:hover, #acc-btn.is-open {
+    color: #000;
+    font-weight: bold;
+}
+#acc-content {
+    max-height: 0;
+    color: rgba(0,0,0,0.75);
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
+}
