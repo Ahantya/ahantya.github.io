@@ -287,8 +287,10 @@ a .button1 {
 
 .logo-img {
     float: left;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
+    right: 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: 5px;
 }
 
