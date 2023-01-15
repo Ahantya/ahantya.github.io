@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ - The Spotless Sweepers</title>
+</head>
+<body>
+  <h1>FAQ - The Spotless Sweepers</h1>
+  <div class="faq-section">
+    <h2>What are the cleaning services offered by The Spotless Sweepers?</h2>
+    <p>We offer a variety of cleaning services including: furniture refurbishing, bathroom cleaning, window cleaning, and full-house cleaning. Our services are tailored to meet the specific needs of our clients.</p>
+  </div>
+  <div class="faq-section">
+    <h2>What are the prices for your cleaning services?</h2>
+    <p>Our prices are very affordable and we offer competitive rates for all of our cleaning services. We also offer special deals and discounts for repeat customers.</p>
+  </div>
+  <div class="faq-section">
+    <h2>How can I book an appointment with The Spotless Sweepers?</h2>
+    <p>You can book an appointment with us by visiting our website and filling out the form on our "Book An Appointment" page. We will contact you to confirm your appointment and schedule a time that works for you.</p>
+  </div>
+  <div class="faq-section">
+    <h2>What is the area of service of The Spotless Sweepers?</h2>
+    <p>The Spotless Sweepers is based in Circle C and we offer cleaning services in the surrounding areas.</p>
+  </div>
+  <div class="faq-section">
+    <h2>What are the working hours of The Spotless Sweepers?</h2>
+    <p>We are open Monday to Friday, from 9am to 5pm. We also offer weekend appointments by request.</p>
+  </div>
+  
+ <script>
+ const questions = document.querySelectorAll('.faq-section h2');
+
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    question.parentElement.classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>
