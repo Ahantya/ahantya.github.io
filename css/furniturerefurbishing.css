@@ -33,3 +33,7 @@ h2 {
 .info {
   width: 600px;
 }
+
+.center {
+ text-align: center;
+}
