@@ -257,7 +257,7 @@ a .button1 {
 }
 
 /* Style all buttons except the "Book An Appointment" button and the dropdown menu when hovered over */
-.navbar a:not(.book-appointment-button):not(.dropdown-menu):hover {
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.logo-img):active {
   background-color: #F0F0F0;
 }
 
