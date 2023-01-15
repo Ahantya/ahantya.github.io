@@ -358,3 +358,9 @@ flex-direction: column;
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+.parent {
+    text-align: center;
+}
+.faq-answers {
+    display: inline-block;
+}
