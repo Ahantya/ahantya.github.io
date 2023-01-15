@@ -355,7 +355,7 @@ flex-direction: column;
     margin-left: 5px;
 } 
 
-.faq-container:active::after {
+.faq-item:active::after {
    content: "\2796";
    display: inline-block;
 }
