@@ -45,41 +45,42 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: black;
+  background-color: #00bfff;
   border: none;
   outline: none;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
-}
-
-.button2 {
-  position: relative;
-  top: 20px;
-  right: 20px;
-  width: 150px;
-  height: 70px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: black;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-}
-
-.center {
-
-}
-
-button {
+  margin: auto;
   font-size: 1em;
   padding: 1em;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 5px;
   text-decoration: none;
+}
+
+.button2 {
+  position: relative;
+  right: 10px;
+  width: 150px;
+  height: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #00bfff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+
+}
+
+.center {
+
 }
 
