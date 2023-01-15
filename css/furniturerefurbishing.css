@@ -31,5 +31,6 @@ h2 {
 }
 
 .info {
-  width: 600px;
+  width: 80%;
+  margin: 0 auto;
 }
