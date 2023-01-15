@@ -308,6 +308,10 @@ a .button1 {
   height: 30px;
 }
 
+.img-logo:hover, .img-logo:active {
+    color: transparent;
+}
+
 .faq {
   width: 600px;
   margin: 0 auto;
