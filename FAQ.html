@@ -29,15 +29,17 @@
     <p>We are open Monday to Friday, from 9am to 5pm. We also offer weekend appointments by request.</p>
   </div>
   
- <script>
-const questions = document.querySelectorAll('.faq-section h2');
-
-questions.forEach(question => {
-  question.addEventListener('click', () => {
-    question.parentElement.parentElement.classList.toggle('open');
-  });
-});
+<script>
+    (function(){
+        const questions = document.querySelectorAll('.faq-section h2');
+        questions.forEach(question => {
+          question.addEventListener('click', () => {
+            question.parentElement.classList.toggle('open');
+          });
+        });
+    })();
 </script>
+
 
 </body>
 </html>
