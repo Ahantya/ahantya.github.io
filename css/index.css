@@ -355,7 +355,7 @@ flex-direction: column;
     margin-left: 5px;
 } 
 
-.faq-page:active {
-  content: "\2796";;
+.faq-page:active::before {
+   content: "\2796";
+   display: inline-block;
 }
-
