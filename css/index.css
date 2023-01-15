@@ -285,3 +285,8 @@ a .button1 {
   background-color: #181515;
 }
 
+.logo-img {
+    float: left;
+    margin-right: 10px;
+}
+
