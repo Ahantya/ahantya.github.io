@@ -1,5 +1,5 @@
 main.js file
-var faq = document.getElementsByClassName("index");
+var faq = document.getElementsByClassName("The Spotless Sweepers");
 var i;
 
 for (i = 0; i < faq.length; i++) {
