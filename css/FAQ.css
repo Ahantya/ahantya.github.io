@@ -1,0 +1,25 @@
+.faq-section {
+  margin-bottom: 20px;
+}
+
+.faq-section h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.faq-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  display: none; /* hide the answer by default */
+}
+
+.faq-section h2:before {
+  content: "▶"; /* the arrow icon */
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.faq-section.open h2:before {
+  content: "▼"; /* change the arrow icon when the answer is open */
+}
