@@ -278,12 +278,12 @@ a .button1 {
 
 /* Add a hover effect for the buttons */
 .navbar a:hover {
-  background-color: #00bfff;
+  background-color: #FFFFFF;
 }
 
 /* Add an active class for the current page */
 .navbar a.active {
-  background-color: #181515;
+  background-color: #FFFFFF;
 }
 
 .logo-img {
