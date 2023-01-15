@@ -5,8 +5,6 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="icon" href="/icon2.png" alt="Logo">
   <link rel="shortcut icon" type="image/x-icon" href="https://codehs.com/uploads/093664098fc0b7dff56061ca72bc2a6e">
-  
-  
 </head>
 <body style="background-color: #181515;">
   <!-- Navbar -->
@@ -57,131 +55,44 @@
   <h3><span style="font-weight: 400; font-size: 25px; font-family: Arvo">Eco-friendly products</span></h3>
   <p><span style="font-weight: 400; font-family: Merriweather">We care about the environment and use only eco-friendly products to ensure that our cleaning services are safe for you and the planet. Our products are biodegradable and non-toxic, so you can trust that your home or business is being cleaned in a sustainable way.</span></p> 
 
-<h3>Parking <abbr title="Frequently Asked Questions">FAQ</abbr>s</h3>
-<dl class="faq">
-  <dt>
-    <button type="button" aria-expanded="false" aria-controls="faq1_desc">What do I do if I have a permit for an assigned lot, but can't find a space there?</button>
-  </dt>
-  <dd>
-    <div id="faq1_desc" class="desc">
-      Park at the nearest available parking meter without paying the meter
-      and call 999-999-9999 to report the problem. We will note and approve your alternate
-      location and will investigate the cause of the shortage in your assigned facility.
+<div class="faq-item">
+    <h1 class="faq-heading">FAQ'S</h1>
+    <section class="faq-container">
+        <div class="faq-item">
+            <!-- faq question -->
+            <h1 class="faq-page">What is an FAQ Page?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p style="width: 500px;margin: 0 auto;margin-bottom: 20px;margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam. Perspiciatis, porro!</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-item">
+            <!-- faq question -->
+            <h1 class="faq-page">Why do you need an FAQ page?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+               <p style="width: 500px;margin: 0 auto;margin-bottom: 20px;margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam. Perspiciatis, porro!</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-item">
+            <!-- faq question -->
+            <h1 class="faq-page">Does it improves the user experience of a website?</h1>
+            <!-- faq answer -->
+            <div class="faq-body" class=faq-answers:active:after">
+                <p style="width: 500px;margin: 0 auto;margin-bottom: 20px;margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam. Perspiciatis, porro!</>
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script>
     </div>
-  </dd>
-  <dt>
-    <button type="button" aria-expanded="false" aria-controls="faq2_desc">What do I do if I lose my permit or if my permit is stolen?</button>
-  </dt>
-  <dd>
-    <div id="faq2_desc" class="desc">You should come to the Parking office and report the
-      loss. There is a fee to replace your lost permit. However, if your permit was stolen, a
-      copy of a police report needs to be submitted along with a stolen parking permit form for a fee replacement exemption.
-    </div>
-  </dd>
-  <dt>
-    <button type="button" aria-expanded="false" aria-controls="faq3_desc">Is there free parking on holidays?</button>
-  </dt>
-  <dd>
-    <div id="faq3_desc" class="desc">
-      All facilities are restricted from 2:00 am - 6:00 am on all days. No
-      exceptions are made for any holiday or recess except those officially listed as a
-      <q>Holidays</q> in the calendar. Please note: 24-hour rental spaces, 24-hour rental lots, and
-      disabled parking is enforced at all times.
-    </div>
-  </dd>
-  <dt>
-    <button type="button" aria-expanded="false" aria-controls="faq4_desc">Do all parking facilities have the same enforcement rules?</button>
-  </dt>
-  <dd>
-    <div id="faq4_desc" class="desc">
-      Some parking facility restrictions differ from others. Be sure to
-      take note of the signs at each lot entrance.
-    </div>
-  </dd>
-</dl>
-    
-<script>
-  'use strict';
-
-/*
- *   @constructorDisclosureButton
- *
- *
- */
-class DisclosureButton {
-  constructor(buttonNode) {
-    this.buttonNode = buttonNode;
-    this.controlledNode = false;
-
-    var id = this.buttonNode.getAttribute('aria-controls');
-
-    if (id) {
-      this.controlledNode = document.getElementById(id);
-    }
-
-    this.buttonNode.setAttribute('aria-expanded', 'false');
-    this.hideContent();
-
-    this.buttonNode.addEventListener('click', this.onClick.bind(this));
-    this.buttonNode.addEventListener('focus', this.onFocus.bind(this));
-    this.buttonNode.addEventListener('blur', this.onBlur.bind(this));
-  }
-
-  showContent() {
-    if (this.controlledNode) {
-      this.controlledNode.style.display = 'block';
-    }
-  }
-
-  hideContent() {
-    if (this.controlledNode) {
-      this.controlledNode.style.display = 'none';
-    }
-  }
-
-  toggleExpand() {
-    if (this.buttonNode.getAttribute('aria-expanded') === 'true') {
-      this.buttonNode.setAttribute('aria-expanded', 'false');
-      this.hideContent();
-    } else {
-      this.buttonNode.setAttribute('aria-expanded', 'true');
-      this.showContent();
-    }
-  }
-
-  /* EVENT HANDLERS */
-
-  onClick() {
-    this.toggleExpand();
-  }
-
-  onFocus() {
-    this.buttonNode.classList.add('focus');
-  }
-
-  onBlur() {
-    this.buttonNode.classList.remove('focus');
-  }
-}
-
-/* Initialize Hide/Show Buttons */
-
-window.addEventListener(
-  'load',
-  function () {
-    var buttons = document.querySelectorAll(
-      'button[aria-expanded][aria-controls]'
-    );
-
-    for (var i = 0; i < buttons.length; i++) {
-      new DisclosureButton(buttons[i]);
-    }
-  },
-  false
-);
-
-    </script>
-    
 
  
     
