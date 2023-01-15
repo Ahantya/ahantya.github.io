@@ -23,3 +23,7 @@
 .faq-section.open h2:before {
   content: "▼"; /* change the arrow icon when the answer is open */
 }
+
+.faq-section.open p {
+  display: block; /* show the answer when the parent div has the class 'open' */
+}
