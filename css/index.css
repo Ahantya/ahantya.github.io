@@ -355,7 +355,7 @@ flex-direction: column;
     margin-left: 5px;
 } 
 
-#faq-button.active::after {
+active::after:not(.navbar a.active) {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
