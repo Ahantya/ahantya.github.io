@@ -297,4 +297,6 @@ a .button1 {
 .navbar .logo-img:hover {
   cursor: default;
   background-color: transparent;
+  width: 30px;
+  height: 30px;
 }
