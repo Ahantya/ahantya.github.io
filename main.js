@@ -1,4 +1,3 @@
-main.js file
 var faq = document.getElementsByClassName("index.html");
 var i;
 
