@@ -262,9 +262,10 @@ a .button1 {
 }
 
 /* Style all buttons except the "Book An Appointment" button and the dropdown menu when clicked */
-.navbar a:not(.book-appointment-button):not(.dropdown-menu):active {
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.logo-img):active {
   background-color: #F0F0F0;
 }
+
 
 /* Style the navbar links */
 .navbar a { 
