@@ -347,15 +347,14 @@ flex-direction: column;
     overflow: hidden;
 }
 .faq-page:after {
-    /* Unicode character for "plus" sign (+) */
     content: '\02795';
+    /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
-} 
-
-.active::after: {
-   content: "\2796";
-   display: inline-block;
+}
+.faq-page:active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
