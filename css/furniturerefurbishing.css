@@ -81,3 +81,7 @@ button {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+
+.button1 a, .button2 a {
+  text-decoration: none;
+}
