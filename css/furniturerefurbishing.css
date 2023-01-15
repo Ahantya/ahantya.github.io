@@ -36,8 +36,5 @@ h2 {
 
 .center {
   display: block;
-  width: 270px; 
-  font-size: 36px;
-  color: #000;
   margin: 0 auto;
 }
