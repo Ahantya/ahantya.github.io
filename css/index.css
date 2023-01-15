@@ -311,7 +311,7 @@ justify-content: center;
 flex-direction: column;
 }
 .hr-line{
-  width: 60%;
+  width: 62.7%;
   margin: auto;
   
 }
@@ -336,7 +336,7 @@ flex-direction: column;
    
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+.faq-page:active,
 .faq-page:hover {
     background-color: #F9F9F9;
 }
@@ -347,14 +347,15 @@ flex-direction: column;
     overflow: hidden;
 }
 .faq-page:after {
-    content: '\02795';
     /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
-}
-.active.last-active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+} 
+
+.active::after {
+   content: "\2796";
+   display: inline-block;
 }
