@@ -21,3 +21,12 @@ h1 {
   text-align: center;
   color: #fff;
 }
+
+
+h2 {
+  font-family: 'Allura';
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #2E4057;
+}
