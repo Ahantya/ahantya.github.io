@@ -239,12 +239,6 @@ div.social {
   font-size: 0.9em;
   text-align: right;
 }
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
-  }
-
-}
 
 /* Add a class to the "Book An Appointment" button */
 a .button1 {
@@ -257,12 +251,12 @@ a .button1 {
 }
 
 /* Style all buttons except the "Book An Appointment" button and the dropdown menu when hovered over */
-.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not {
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not( {
   background-color: #F0F0F0;
 }
 
 /* Style all buttons except the "Book An Appointment" button and the dropdown menu when clicked */
-.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not {
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not( {
   background-color: #F0F0F0;
 }
 
@@ -293,24 +287,8 @@ a .button1 {
     width: 30px;
     height: 30px;
     bottom: 5px;
-    
-.img-logo {
-    pointer-events: none;
     background-color: transparent;
-}
 
-}
-.navbar .img-logo:hover {
-  cursor: default;
-  pointer-events: none;
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-}
-
-.img-logo:hover, .img-logo:active {
-    color: transparent;
-}
 
 .faq {
   width: 600px;
