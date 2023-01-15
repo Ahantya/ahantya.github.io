@@ -294,4 +294,8 @@ a .button1 {
     height: 30px;
     bottom: 5px;
 }
+.navbar .logo-img:hover {
+  cursor: default;
+  background-color: transparent;
+}
 
