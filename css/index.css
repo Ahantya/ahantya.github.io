@@ -354,11 +354,7 @@ flex-direction: column;
     margin-left: 5px;
 } 
 
-.fa {
-  transition: transform .2s;
-}
-
-.fa.active {
-  transform: rotateZ(90deg);
+.faq-page:active {
+  content: \002B;
 }
 
