@@ -353,9 +353,10 @@ flex-direction: column;
     color: #777;
     float: right;
     margin-left: 5px;
+} 
 
-.active:after {
+#active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
-}
+
 }
