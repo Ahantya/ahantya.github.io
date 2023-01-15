@@ -286,21 +286,21 @@ a .button1 {
   background-color: #181515;
 }
 
-.logo-img {
+.img-logo {
     float: left;
     right: 10px;
     position: relative;
     width: 30px;
     height: 30px;
     bottom: 5px;
-    .logo-img {
+    
+.img-logo {
     pointer-events: none;
     background-color: transparent;
-  /* Other existing styles for .logo-img */
 }
 
 }
-.navbar .logo-img:hover {
+.navbar .img-logo:hover {
   cursor: default;
   pointer-events: none;
   background-color: transparent;
