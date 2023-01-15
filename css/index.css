@@ -354,7 +354,7 @@ flex-direction: column;
     float: right;
     margin-left: 5px;
 }
-.active:after {
+.faq-page:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
