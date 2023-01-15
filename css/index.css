@@ -308,12 +308,12 @@ a .button1 {
 .question {
 font-weight: bold;
 cursor: pointer;
+margin-bottom: 20px;
 }
 
 .answer {
 display: none;
 padding: 10px;
-background-color: #f1f1f1;
 }
 
 .arrow {
