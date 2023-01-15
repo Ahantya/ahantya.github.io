@@ -1,4 +1,4 @@
-var faq = document.getElementsByClassName("index.html");
+var faq = document.getElementsByClassName("faq-item");
 var i;
 
 for (i = 0; i < faq.length; i++) {
