@@ -311,7 +311,7 @@ justify-content: center;
 flex-direction: column;
 }
 .hr-line{
-  width: 64.58%;
+  width: 62.7%;
   margin: auto;
   
 }
@@ -354,7 +354,7 @@ flex-direction: column;
     float: right;
     margin-left: 5px;
 }
-faq-answers.active:after {
+faq-answers:active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
