@@ -56,47 +56,33 @@
   <p><span style="font-weight: 400; font-family: Merriweather">We care about the environment and use only eco-friendly products to ensure that our cleaning services are safe for you and the planet. Our products are biodegradable and non-toxic, so you can trust that your home or business is being cleaned in a sustainable way.</span></p> 
 
 
-    <div class="faq_container">
-        <div class="faq">
-            <div class="faq_question open">Question goes here 1</div>
-            <div class="faq_answer_container" style="display: block;">
-                <div class="faq_answer">Answer goes here</div>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="faq_question">Question goes here 2</div>
-            <div class="faq_answer_container">
-                <div class="faq_answer">Answer goes here</div>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="faq_question">Question goes here 3</div>
-            <div class="faq_answer_container">
-                <div class="faq_answer">Answer goes here</div>
-            </div>
-        </div>
-    </div>
+   <div class="parent-container">
+  <ul class="faq">
+    <li>
+      <h3 class="question">Frequently Asked Question?
+        <div class="plus-minus-toggle collapsed"></div>
+      </h3>
+      <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis 
+        ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed 
+        fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+    </li>
+    <li>
+      <h3 class="question">Frequently Asked Question?
+        <div class="plus-minus-toggle collapsed"></div>
+      </h3>
+      <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis 
+        ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed 
+        fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+    </li>
+  </ul>
+</div>
     
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-
-            $('.faq_question').click(function() {
-
-                if ($(this).parent().is('.open')) {
-                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
-                    $(this).closest('.faq').removeClass('open');
-                } else {
-                    $('.faq_answer_container').slideUp();
-                    $('.faq').removeClass('open');
-                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
-                    $(this).closest('.faq').addClass('open');
-                }
-
-            });
-        });
+      $('.faq li .question').click(function () {
+  $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+  $(this).parent().toggleClass('active');
+});
+      
     </script>
  
     
