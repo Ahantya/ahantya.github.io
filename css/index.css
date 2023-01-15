@@ -343,8 +343,10 @@ flex-direction: column;
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
-    display: none;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .faq-page:after {
     content: '\02795';
@@ -357,8 +359,4 @@ flex-direction: column;
 .active:last-child:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
-}
-.faq-answers {
-    width: 50%; /* or any specific width */
-    margin: 0 auto;
 }
