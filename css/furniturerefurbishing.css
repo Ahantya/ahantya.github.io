@@ -39,6 +39,20 @@ h2 {
 
 .button1 {
   position: absolute;
+  right: 10px;
+  width: 150px;
+  height: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button2 {
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 150px;
