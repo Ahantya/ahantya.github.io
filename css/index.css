@@ -353,7 +353,8 @@ flex-direction: column;
     color: #777;
     float: right;
     margin-left: 5px;
-    .active:after {
-      content: "\2796";
-  } }
+}
+active:after {
+     content: "\2796";
+  } 
 
