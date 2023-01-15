@@ -5,6 +5,11 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="icon" href="/icon2.png" alt="Logo">
   <link rel="shortcut icon" type="image/x-icon" href="https://codehs.com/uploads/093664098fc0b7dff56061ca72bc2a6e">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 </head>
 <body style="background-color: #181515;">
   <!-- Navbar -->
@@ -56,34 +61,18 @@
   <p><span style="font-weight: 400; font-family: Merriweather">We care about the environment and use only eco-friendly products to ensure that our cleaning services are safe for you and the planet. Our products are biodegradable and non-toxic, so you can trust that your home or business is being cleaned in a sustainable way.</span></p> 
 
 
-   <div class="parent-container">
-  <ul class="faq">
-    <li>
-      <h3 class="question">Frequently Asked Question?
-        <div class="plus-minus-toggle collapsed"></div>
-      </h3>
-      <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis 
-        ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed 
-        fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-    </li>
-    <li>
-      <h3 class="question">Frequently Asked Question?
-        <div class="plus-minus-toggle collapsed"></div>
-      </h3>
-      <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis 
-        ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed 
-        fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-    </li>
-  </ul>
+<div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+              <span>How to Create FAQ Section</span> </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body"> <strong>This is the first item's accordion body.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+          </div>
 </div>
-    
-    <script>
-      $('.faq li .question').click(function () {
-  $(this).find('.plus-minus-toggle').toggleClass('collapsed');
-  $(this).parent().toggleClass('active');
-});
-      
-    </script>
  
     
     
