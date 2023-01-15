@@ -34,3 +34,32 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
+
+
+
+.button1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.center {
+
+}
+
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
