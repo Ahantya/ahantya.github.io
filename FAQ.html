@@ -30,11 +30,11 @@
   </div>
   
  <script>
- const questions = document.querySelectorAll('.faq-section h2');
+const questions = document.querySelectorAll('.faq-section h2');
 
 questions.forEach(question => {
   question.addEventListener('click', () => {
-    question.parentElement.classList.toggle('open');
+    question.parentElement.parentElement.classList.toggle('open');
   });
 });
 </script>
