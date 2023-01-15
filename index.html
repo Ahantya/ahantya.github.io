@@ -56,94 +56,48 @@
   <p><span style="font-weight: 400; font-family: Merriweather">We care about the environment and use only eco-friendly products to ensure that our cleaning services are safe for you and the planet. Our products are biodegradable and non-toxic, so you can trust that your home or business is being cleaned in a sustainable way.</span></p> 
 
 
+    <div class="faq_container">
+        <div class="faq">
+            <div class="faq_question open">Question goes here 1</div>
+            <div class="faq_answer_container" style="display: block;">
+                <div class="faq_answer">Answer goes here</div>
+            </div>
         </div>
-        <hr class="hr-line">
-        <div class="faq-item">
-            <!-- faq question -->
-            <h1 class="faq-page">Why do you need an FAQ page?</h1>
-            <!-- faq answer -->
-            <div class="faq-body">
-               <p style="width: 500px;margin: 0 auto;margin-bottom: 20px;margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                    aperiam. Perspiciatis, porro!</p>
-              
-<div id="card">
-  <div id="hero">
-    <img src="https://raw.githubusercontent.com/ArtemPonomarenko/FAQ-Accordion/main/images/illustration-woman-online-mobile.svg" alt="section image" class="img">
-  </div>
-  <h2 id="title">FAQ</h2>
-  <div id="acc-container">
-    <button id="acc-btn">What is the definition of a will?</button>
-    <div id="acc-content">
-      <p>
-        It is a dead giveaway.
-      </p>
-    </div>
-    <button id="acc-btn">
-      What happens to chemists when they die?
-    </button>
-    <div id="acc-content">
-      <p>
-        We barium [bury them].
-      </p>
-    </div>
-    <button id="acc-btn">
-      Why does the leopard find it difficult to hide and stalk?
-    </button>
-    <div id="acc-content">
-      <p>
-        Because he is spotted always.
-      </p>
-    </div>
-    <button id="acc-btn">
-      What kind of key opens a banana?
-    </button>
-    <div id="acc-content">
-      <p>A cat.</p>
-    </div>
 
-    <button id="acc-btn">
-      Where does a tree store it's stuff?
-    </button>
-    <div id="acc-content">
-      <p>In it's Trunk.</p>
+        <div class="faq">
+            <div class="faq_question">Question goes here 2</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Answer goes here</div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq_question">Question goes here 3</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Answer goes here</div>
+            </div>
+        </div>
     </div>
-    <button id="acc-btn">
-      What dog is known for its punctuality?
-    </button>
-    <div id="acc-content">
-      <p>The watch-dog 🐕</p>
-    </div>
-    <button id="acc-btn">
-      Name a thing that has four wheels and flies?
-    </button>
-    <div id="acc-content">
-      <p>The garbage truck, of course.</p>
-    </div>
-    <button id="acc-btn">
-      Why was everyone so tired on the First of April?
-    </button>
-    <div id="acc-content">
-      <p>Because they had just completed a March of 31 days.</p>
-    </div>
-  </div>
-</div>
-              
-<script>
-const btns = document.querySelectorAll("#acc-btn");
-// fn
-function accordion() {
-  // this = the btn | icon & bg changed
-  this.classList.toggle("is-open");
-  // the acc-content
-  const content = this.nextElementSibling;
-  // IF open, close | else open
-  if (content.style.maxHeight) content.style.maxHeight = null;
-  else content.style.maxHeight = content.scrollHeight + "px";
-}
-// event
-btns.forEach((el) => el.addEventListener("click", accordion));
-</script>      
+    
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                    $(this).closest('.faq').removeClass('open');
+                } else {
+                    $('.faq_answer_container').slideUp();
+                    $('.faq').removeClass('open');
+                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+        });
+    </script>
  
     
     
