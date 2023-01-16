@@ -105,10 +105,6 @@
   outline: none;
   cursor: pointer;
   font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
 }
 .button2 {
   position: absolute;
@@ -124,10 +120,6 @@
   outline: none;
   cursor: pointer;
   font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
 }
 
 .container {
