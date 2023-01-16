@@ -363,4 +363,12 @@ a .button1 {
     bottom: 5px;
     background-color: transparent;
 
+.button1-left {
+  position: relative;
+  left: -20px;
+}
 
+.button1-right {
+  position: relative;
+  left: 20px;
+}
