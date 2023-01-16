@@ -107,7 +107,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 400px;
+        width: 300px;
         padding: 20px;
         background-color: #fff;
         border-radius: 5px;
@@ -381,4 +381,14 @@ a .button1 {
   width: 200px;
   text-align: center;
 }
+.input-box {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid #23B6E6;
+outline: none;
+}
+
  
