@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Appointment Form</title>
-  <link rel="stylesheet" type="text/css" href="css/appointment.css">
+	<meta charset="UTF-8">
+	<title>Booking</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
 </head>
 <body>
-  <!-- Appointment form -->
-  <div class="form-container">
-    <h2>Book an Appointment</h2>
-    <p>Please fill out the form below to schedule your cleaning service:</p>
-    <form action="https://formspree.io/f/moqzqkrr" method="POST">
-      <!-- Name -->
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      <!-- Email -->
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <!-- Phone -->
-      <label for="phone">Phone:</label><br>
-      <input type="tel" id="phone" name="phone" required><br>
-      <!-- Address -->
-      <label for="address">Address:</label><br>
-      <input type="text" id="address" name="address" required><br>
-      <!-- Service -->
-      <label for="service">Service:</label><br>
-      <select id="service" name="service">
-        <option value="apartment">Apartment Cleaning</option>
-        <option value="vehicle">Vehicle Cleaning</option>
-        <option value="window">Window Cleaning</option>
-      </select><br>
-      <!-- Date -->
-      <label for="date">Date:</label><br>
-      <input type="date" id="date" name="date" required><br>
-      <!-- Time -->
-      <label for="time">Time:</label><br>
-      <input type="time" id="time" name="time" required><br>
-      <!-- Submit button -->
-      <button type="submit" class="submit-button">Submit</button>
-    </form>
-  </div>
-  
-  
+
+<div class="wrapper">
+
+
+	<div class="container">
+		<div class="container-time">
+				<h2 class="heading">Time Open</h2>
+				<h3 class="heading-days">Monday-Friday</h3>
+				<p>9am - 5pm /p>
+
+				<h3 class="heading-days">Saturday</h3>
+      <p>Soon</p>
+
+				<hr>
+
+				<h4 class="heading-phone"> Call Us: (512)-264-5172 </h4>
+		</div>
+
+		<div class="container-form">
+				<form action="#">
+					<h2 class="heading heading-yellow">Reservation Online</h2>
+
+					<div class="form-field">
+						<p>Your Name</p>
+						<input type="text" placeholder="Your Name">
+					</div>
+					<div class="form-field">
+						<p>Your email</p>
+						<input type="email" placeholder="Your email">
+					</div>
+					<div class="form-field">
+						<p>Date</p>
+						<input type="date">
+					</div>
+					<div class="form-field">
+						<p>Time</p>
+						<input type="time">
+					</div>
+					<div class="form-field">
+						<p>How many people?</p>
+						<select name="select" id="#">
+							<option value="1">1 person</option>
+							<option value="2">2 persons</option>
+							<option value="3">3 persosn</option>
+							<option value="4">4 persons</option>
+							<option value="5">5 persons</option>
+							<option value="5+">5+ persons</option>
+						</select>
+					</div>
+
+					<button class="btn">Submit</button>
+				</form>
+		</div>
+	</div>
+</div>	
+	
 </body>
 </html>
