@@ -362,12 +362,3 @@ a .button1 {
     height: 30px;
     bottom: 5px;
     background-color: transparent;
-
-.button1-right {
-  float: right;
-}
-
-.button1-left {
-  float: left;
-  margin-right: 10px; /* add some space between the two buttons */
-}
