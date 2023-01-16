@@ -27,40 +27,4 @@
         </div>
       </div> 
       <button class="button1" onclick="location.href='/appointment'">Book An Appointment</button>
-      <button class="button2" onclick="openModal()">Sign up for our newsletter!</button>
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <p>Sign up for our newsletter</p>
-    <input type="email" id="email" placeholder="Enter your email">
-    <button onclick="submitEmail()">Submit</button>
-  </div>
-</div>
-
-<script>
-  var modal = document.getElementById("myModal");
-
-  function openModal() {
-    modal.style.display = "block";
-  }
-
-  function closeModal() {
-    modal.style.display = "none";
-  }
-
-  function submitEmail() {
-    var email = document.getElementById("email").value;
-    if (validateEmail(email)) {
-      //submit email
-    } else {
-      alert("Please enter a valid email address.");
-    }
-  }
-
-  function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
-</script>
  
