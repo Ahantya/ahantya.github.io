@@ -1,6 +1,6 @@
 /* Style the navbar */
 .navbar {
-  background-color: #7A306C;
+  background-color: #F5F0F6;
   font-family: Arial, sans-serif;
   /* Remove fixed positioning */
   position: relative;
@@ -99,7 +99,7 @@
   height: 70px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #F5F0F6;
   background-color: #00bfff;
   border: none;
   outline: none;
@@ -113,7 +113,7 @@
   height: 70px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #F5F0F6;
   background-color: #00bfff;
   border: none;
   outline: none;
