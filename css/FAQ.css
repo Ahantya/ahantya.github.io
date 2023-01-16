@@ -27,3 +27,10 @@
 .faq-section.open p {
   display: block; /* show the answer when the parent div has the class 'open' */
 }
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+body{
+  background: #23B6E6;
+  font-family: 'Josefin Sans', sans-serif;
+}
