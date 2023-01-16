@@ -376,6 +376,7 @@ a .button1 {
     height: 30px;
     bottom: 5px;
     background-color: transparent;
+}
 
 .input-box {
   width: 200px;
@@ -394,4 +395,4 @@ outline: none;
 position: relative;
 text-align: center;
 justify-content: center;
-
+}
