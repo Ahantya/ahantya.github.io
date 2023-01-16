@@ -39,21 +39,32 @@
             </div>
          </div>
       </div>
-      <script>
-         const open = document.getElementById('open');
-         const close = document.getElementById('close');
-         const modal = document.getElementById('modal_container');
+    </div>
+      <button id="open" class="button2">Sign Up For our Newsletter!</button>
 
-         open.addEventListener('click', () => {
-          modal.classList.add('show');
-         });
+<div class="modal-container" id="modal_container">
+  <div class="modal">
+    <span id="close"> X  </span>
+    <div class="modal-inner">
+      <h1>Get Our Content In Your Inbox</h1>
+      <p>Subscribe to be the first to know when we drop a new content.</p>
+      <input type="text" placeholder="Email Address">
+      <button class="submit ">Submit</button><br/>
+    </div>
+  </div>
+</div>
 
-         close.addEventListener('click', () => {
-          modal.classList.remove('show');
-         });
+<script>
+  const open = document.querySelector('.button2');
+  const close = document.getElementById('close');
+  const modal = document.getElementById('modal_container');
 
+  open.addEventListener('click', () => {
+    modal.classList.add('show');
+  });
 
-
-      </script>
-      </div>
+  close.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+</script>
 
