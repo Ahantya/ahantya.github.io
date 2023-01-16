@@ -174,46 +174,99 @@ a .button1 {
     height: 30px;
     bottom: 5px;
     background-color: transparent;
-}
-.main-content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-}
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+	box-sizing: border-box;
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+body {
+	background-color: #EDEEF6;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+button {
+	background-color: rgb(31, 25, 44);
+	border: 0;
+	border-radius: 5px ;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px 25px;
+
 }
 
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.modal-container {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal-inner {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 75px 50px;
+	text-align: center;
+	height: 20em;
+	width: 600px;
+	max-width: 100%;
+/* 	transform: translateY(-200%); */
+/* 	transition: transform 0.3s ease; */
+}
+
+
+.modal-inner h1 {
+	margin: 0;
+}
+
+.modal-inner p {
+	font-size: 14px;
+	opacity: 0.7;
+}
+input{
+	height:3em;
+	width: 250px;
+	outline:none;
+	padding-left: 1em;
+	margin-top: 1em;
+}
+.submit{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-top: 15px;
+	height:40.5px;
+}
+span{
+	float: right;
+  font-size: 18px;
+  font-weight: 600;
+	line-height: 1;
+	margin:20px 25px 0;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: none;
+  opacity: .5;
+	cursor: pointer;
+	height: 10px;
+}
