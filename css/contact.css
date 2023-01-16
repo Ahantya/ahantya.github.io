@@ -12,6 +12,11 @@ body {
   padding: 20px;
 }
 
+a {
+  color: #99C24D; /* change to desired color */
+}
+
+
 h1 {
   font-family: 'Allura', cursive;
   font-size: 52px;
