@@ -1,6 +1,6 @@
 /* Style the navbar */
 .navbar {
-  background-color: #2E4057;
+  background-color: #7A306C;
   font-family: Arial, sans-serif;
   /* Remove fixed positioning */
   position: relative;
@@ -90,80 +90,6 @@
   opacity: 1;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.95 );
-        z-index: 999;
-        display: none; /* Hidden by default */
-      }
-      
-      /* Styles for the newsletter form */
-      .newsletter-form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        text-align: center;
-      }
-      .newsletter-form h2 {
-        margin-bottom: 20px;
-      }
-      .newsletter-form input[type="email"] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid #23B6E6;
-        outline: none;
-      }
-      .newsletter-form input[type="submit"] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        background-color: #00bfff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: none;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      /* Style the modal content */
-      .modal-content {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: center;
-        /* additional styling for the content */
-      }
-     .close-btn {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-      }
 
 .button1 {
   position: absolute;
@@ -378,21 +304,3 @@ a .button1 {
     background-color: transparent;
 }
 
-.input-box {
-  width: 200px;
-  text-align: center;
-}
-.input-box {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-box-sizing: border-box;
-border: none;
-border-bottom: 2px solid #23B6E6;
-outline: none;
-}
-.submit {
-position: relative;
-text-align: center;
-justify-content: center;
-}
