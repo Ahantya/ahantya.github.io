@@ -8,6 +8,14 @@
   margin-bottom: 5px;
 }
 
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
 .faq-section p {
   font-size: 18px;
   line-height: 1.5;
