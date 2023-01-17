@@ -96,9 +96,9 @@
 }
 
 .button1 {
-  position: absolute;
-  top: 15px;
-  right: 20px;
+  position: relative;
+  top: 10px;
+  left: 320px;
   width: 150px;
   height: 70px;
   font-size: 16px;
