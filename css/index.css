@@ -149,4 +149,17 @@ font-size: 0.8em;
 padding: 3px;
 font-size: 12px;
 }
+  
+.navbar {
+    font-size: 14px;
+  }
+.button1 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+.button2 {
+    position: relative;
+    bottom: 0;
+    right: 0;
 }
