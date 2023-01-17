@@ -127,3 +127,26 @@ div.social {
   font-size: 0.9em;
   text-align: right;
 }
+
+
+@media (max-width: 768px) {
+footer {
+font-size: 14px;
+}
+h3 {
+font-size: 1.2em;
+}
+.row.primary {
+grid-template-columns: 1fr;
+}
+.social i {
+font-size: 2em;
+}
+.copyright p {
+font-size: 0.8em;
+}
+.footer-menu a{
+padding: 3px;
+font-size: 12px;
+}
+}
