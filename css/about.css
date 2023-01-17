@@ -39,7 +39,8 @@ body{
 }
 
 .wrapper{
-  margin-top: 2.5%;
+  position: relative;
+  bottom: 72px;
 }
 
 .wrapper h1{
