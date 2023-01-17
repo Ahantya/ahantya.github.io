@@ -8,7 +8,7 @@
   }
 
   /* Style the navbar links */
-  .navbar link { 
+  .navbar a { 
     float: left;
     font-size: 16px;
     color: #23B6E6;
@@ -17,14 +17,14 @@
   }
 
   /* Style the logo */
-  .navbar-brand {
+  .navbar .logo {
     font-size: 20px;
     font-weight: bold;
     color: #23B6E6;
   }
 
   /* Style the dropdown button */
-  .dropdown-toggle {
+  .navbar .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -39,7 +39,7 @@
     right: 100px;
   }
 
-  .dropdown-item {
+  .navbar .dropdown-content a {
     display: block;
     color: black;
     padding: 8px 16px;
@@ -52,7 +52,7 @@
   }
 
 
-  .dropdown  {
+  .navbar .dropdown {
     position: relative; 
     display: inline-block; 
     margin-left: 100px;
@@ -60,7 +60,7 @@
 
 
   /* Style the dropdown content */
-  .dropdown-menu  {
+  .navbar .dropdown-content {
     width: 268px;
     height: 95px;
     visibility: hidden;
@@ -68,12 +68,12 @@
     transition: visibility 0.5s, opacity 0.5s ease-in-out;
   }
 
-  .dropdown-menu {
+  .dropdown {
     width: 161px;
     height: 260px;
   }
 
-  .dropdown-menu {
+  .dropdown-content {
     width: 161px;
     height: 260px;
   }
@@ -81,7 +81,7 @@
 
 
 /* Style the dropdown content (hidden by default) */
-.dropdown-menu  {
+.navbar .dropdown-content {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
@@ -89,13 +89,13 @@
 }
 
 /* Style the dropdown content on hover and focus */
-.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu {
+.navbar .dropdown:hover .dropdown-content, .navbar .dropdown:focus .dropdown-content {
   visibility: visible;
   opacity: 1;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-.btn {
+.button1 {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -111,7 +111,7 @@
   font-size: 1em;
   border-radius: 5px;
 }
-.btn2 {
+.button2 {
   position: absolute;
   top: 20px;
   right: 230px;
@@ -133,24 +133,28 @@
 }
 
 /* Add a class to the "Book An Appointment" button */
-/*a .button1 {
+a .button1 {
   class: "book-appointment-button";
-} */
+}
 
 /* Add a class to the dropdown menu */
-.dropdown {
+.navbar .dropdown {
   class: "dropdown-menu";
 }
 
 /* Style all buttons except the "Book An Appointment" button and the dropdown menu when hovered over */
-.navbar .nav-item:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not( {
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not( {
+  background-color: #F0F0F0;
+}
+
+/* Style all buttons except the "Book An Appointment" button and the dropdown menu when clicked */
+.navbar a:not(.book-appointment-button):not(.dropdown-menu):not(.img-logo):not( {
   background-color: #F0F0F0;
 }
 
 
-
 /* Style the navbar links */
-.navbar .nav-item { 
+.navbar a { 
   float: left;
   font-size: 16px;
   color: #23B6E6;
@@ -159,16 +163,16 @@
 }
 
 /* Add a hover effect for the buttons */
-.navbar .nav-item:hover {
+.navbar a:hover {
   background-color: #00bfff;
 }
 
 /* Add an active class for the current page */
-.navbar .nav-item.active {
+.navbar a.active {
   background-color: #181515;
 }
 
-.img-fluid {
+.img-logo {
     float: left;
     right: 10px;
     position: relative;
