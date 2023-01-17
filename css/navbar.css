@@ -37,6 +37,7 @@
     justify-content: right;
     position: relative;
     right: 100px;
+    top: -2.7px;
   }
 
   .navbar .dropdown-content a {
@@ -49,6 +50,7 @@
     line-height: 23px; 
     position: relative;
     right: 100px;
+    bottom: 4px;
   }
 
 
