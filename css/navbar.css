@@ -185,17 +185,15 @@ a .button1 {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navbar {
     font-size: 14px;
   }
   .button1 {
-    .button1 {
     position: fixed;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-  }
 }
 .button2 {
 
