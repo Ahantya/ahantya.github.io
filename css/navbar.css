@@ -191,11 +191,14 @@ a .button1 {
   }
   .button1 {
     position: fixed;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
 .button2 {
-
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
