@@ -25,6 +25,11 @@ h1 {
   color: #fff;
 }
 
+info {
+  position: relative;
+  bottom: 72px;
+}
+  
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
