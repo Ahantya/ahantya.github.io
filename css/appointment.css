@@ -4,6 +4,8 @@
       background-color: #E5DDE6;
     }
     .form-container {
+      /* position: relative; */
+      float: right;
       max-width: 800px;
       margin: 0 auto;
       text-align: center;
