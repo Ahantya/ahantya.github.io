@@ -71,4 +71,7 @@
 	outline: 3px dashed #998100;
 	outline-offset: -30px;
 	text-align: center;
+	position: relative;
+    	bottom: 570px;
+    	left: 170px;
 }
