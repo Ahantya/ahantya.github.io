@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/navbar.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="icon" href="/icon2.png" alt="Logo">
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="https://codehs.com/uploads/093664098fc0b7dff56061ca72bc2a6e">
   </head>
   <body style="background-color: #E5DDE6;">
-      <!-- <div id="navbar"></div>
-    <script src="navbar.js"></script> -->
+      <div id="navbar"></div>
+    <script src="navbar.js"></script>
     
    <div class="main-content" style="
     bottom: 70px;
@@ -106,12 +106,8 @@
   <div class="column subscribe">
    <h3>Newsletter</h3>
     <div>
-     <form name = "submit-to-google-sheet"> 
-    <input type="email" name="Email" placeholder="Your email ID." required>
-    <button type="submit"> <img src="send.png" width="30px"></button>
-    </form>
-    <span id = "msg"> </span>
-  </div>      
+     <input type="email" placeholder="Your email id here" />
+     <button>Subscribe</button>
     </div>
 
   </div>
@@ -152,20 +148,6 @@
     header.style.visibility = 'visible';
   });
   </script> -->
-    
- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzIdVPuWEUNwcGOImiFgtu0tWkrSshCg19bcSIy_vCl32Fik4GsqWONxaPFb8_jBjwksA/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg  = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {msg.innerHTML = "Thank you for Subscribing!"
-                        setTimeout(function(){msg.innerHTML =" "},5000) form.reset() })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 
   </body>
   </html>
