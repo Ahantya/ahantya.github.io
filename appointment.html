@@ -62,6 +62,10 @@
       alert("Please select a date at least one week in the future.");
       input.value = "";
     }
+    else if (diff > 5184000000) {
+      alert("Please select a date that is not more than two months in the future.");
+      input.value = "";
+    }
   });
 </script>
 
