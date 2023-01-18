@@ -3,13 +3,14 @@
 <head>
   <title>Appointment Form</title>
   <link rel="stylesheet" type="text/css" href="css/appointment.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
 <body>
   <!-- Appointment form -->
   <div class="form-container">
     <h2>Book an Appointment</h2>
     <p>Please fill out the form below to schedule your cleaning service:</p>
-    <form action="https://formspree.io/f/moqzqkrr" method="POST">
+   <form action="https://formsubmit.co/ahantyasharma57@gmail.com" method="POST">
       <!-- Name -->
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" required><br>
@@ -25,9 +26,10 @@
       <!-- Service -->
       <label for="service">Service:</label><br>
       <select id="service" name="service">
-        <option value="apartment">Apartment Cleaning</option>
-        <option value="vehicle">Vehicle Cleaning</option>
-        <option value="window">Window Cleaning</option>
+        <option value="apartment">Full House Package</option>
+        <option value="vehicle">Window Cleaning</option>
+        <option value="window">Bathroom Cleaning</option>
+        <option value="window">Furniture Refurbishing </option>
       </select><br>
       <!-- Date -->
       <label for="date">Date:</label><br>
@@ -38,6 +40,29 @@
       <!-- Submit button -->
       <button type="submit" class="submit-button">Submit</button>
     </form>
+    <script>
+  // Get the input element
+  var input = document.getElementById("date");
+  
+  // Listen for changes to the input
+  input.addEventListener("change", function() {
+    // Get the selected date
+    var selectedDate = new Date(input.value);
+    
+    // Get the current date
+    var currentDate = new Date();
+    
+    // Get the difference between the selected date and the current date
+    var diff = selectedDate - currentDate;
+    
+    // Check if the selected date is at least one week in the future
+    if (diff < 604800000) {
+      alert("Please select a date at least one week in the future.");
+      input.value = "";
+    }
+  });
+</script>
+
   </div>
   
   
