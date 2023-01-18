@@ -1,6 +1,7 @@
 <!-- Navbar -->
 <div class="navbar">
-<button class="button2" id="newsletter-button">Sign Up for Newsletter</button>
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+     <button class="button2" id="newsletter-button">Sign Up for Newsletter</button>
 
     <div id="newsletter-modal" class="modal">
       <div class="modal-content">
@@ -13,6 +14,7 @@
       </div>
     </div>
   <script>
+  window.addEventListener('load', function(){
     // JavaScript for the modal and button
     var newsletterButton = document.getElementById("newsletter-button");
     var newsletterModal = document.getElementById("newsletter-modal");
@@ -31,9 +33,8 @@
         newsletterModal.style.display = "none";
       }
     }
-  </script>
-</div>
-  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  });
+</script>
   <!-- Logo -->
   <a href="https://spotless-sweepers.studio" class="logo">The Spotless Sweepers</a>
   <a href="https://spotless-sweepers.studio">
