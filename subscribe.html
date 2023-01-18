@@ -31,5 +31,19 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+  
+ <script>
+   function doGet(e) {
+  var cors = CorsApp.createForCurrentScript();
+  cors.setAllowedOrigins(["*"]);
+  cors.setAllowedMethods(["GET", "POST", "PUT", "DELETE", "OPTIONS"]);
+  cors.setAllowedHeaders(["Content-Type"]);
+  cors.setMaxAgeSeconds(3600);
+  return ContentService
+    .createTextOutput(JSON.stringify(e.parameters))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+  </script>
+  
   </body>
   </head>
