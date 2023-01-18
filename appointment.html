@@ -17,7 +17,7 @@
   <!-- Appointment form -->
   <div class="form-container">
    <form action="https://formsubmit.co/ahantyasharma57@gmail.com" method="POST">
-      <h1> Please Book an Appointment through the Form! </h1>
+      <h1> Please Book an Appointment through the Form </h1>
       <!-- Name -->
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" required><br>
@@ -46,11 +46,10 @@
       <input type="time" id="time" name="time" required><br>
       <!-- Submit button -->
       <button type="submit" class="submit-button">Submit</button>
-<script>
 // Listen for changes to the date input
 document.getElementById("date").addEventListener("change", function() {
     // Get the selected date
-    var selectedDate = new Date(input.value);
+    var selectedDate = new Date(this.value);
 
     // Get the current date
     var currentDate = new Date();
@@ -78,15 +77,14 @@ document.getElementById("date").addEventListener("change", function() {
   // Listen for changes to the time input
   document.getElementById("time").addEventListener("change", function() {
     // Get the selected time
-    var selectedTime = new Date("1970-01-01T" + input.value + "Z");
+    var selectedTime = new Date("1970-01-01T" + this.value + "Z");
 
     // Check if the selected time's hour is between 9 and 17 (9am and 5pm)
     if (selectedTime.getUTCHours() < 9 || selectedTime.getUTCHours() > 17) {
       alert("Please select a time between 9am and 5pm.");
-      input.value = "";
+      this.value = "";
     }
   });
-	   </script>
 
 
 
