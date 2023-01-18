@@ -1,40 +1,6 @@
 <!-- Navbar -->
 <div class="navbar">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
-     <button class="button2" id="newsletter-button">Sign Up for Newsletter</button>
-
-    <div id="newsletter-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <input type="submit" value="Sign Up">
-        </form>
-      </div>
-    </div>
-  <script>
-  window.addEventListener('load', function(){
-    // JavaScript for the modal and button
-    var newsletterButton = document.getElementById("newsletter-button");
-    var newsletterModal = document.getElementById("newsletter-modal");
-    var closeModal = document.getElementsByClassName("close")[0];
-
-    newsletterButton.onclick = function() {
-      newsletterModal.style.display = "block";
-    }
-
-    closeModal.onclick = function() {
-      newsletterModal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      if (event.target == newsletterModal) {
-        newsletterModal.style.display = "none";
-      }
-    }
-  });
-</script>
   <!-- Logo -->
   <a href="https://spotless-sweepers.studio" class="logo">The Spotless Sweepers</a>
   <a href="https://spotless-sweepers.studio">
@@ -61,3 +27,9 @@
       </div>
     </div> 
     <button class="button1" onclick="location.href='/appointment'">Book An Appointment</button>
+    <div class="navbar">
+    <button class="button2" id="newsletter-button">Sign Up for Newsletter</button>
+    <div id="newsletter-modal" class="modal">
+        ...
+    </div>
+</div>
