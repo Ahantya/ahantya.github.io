@@ -31,7 +31,7 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         if(response.ok){
-          form.reset();
+          <!-- form.reset(); -->
           msg.innerHTML = "Thank you for Subscribing!";
           setTimeout(function(){msg.innerHTML = ""},5000);
         }else{
