@@ -8,6 +8,9 @@
       margin: 0 auto;
       text-align: center;
       bottom: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
       font-size: 36px;
