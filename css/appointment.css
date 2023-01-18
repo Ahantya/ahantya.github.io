@@ -1,13 +1,13 @@
     body {
       font-family: Arial, sans-serif;
       color: #333;
-      background-color: #f2f2f2;
+      background-color: #E5DDE6;
     }
     .container {
       max-width: 800px;
       margin: 0 auto;
       text-align: center;
-      padding: 20px;
+      bottom: 70px;
     }
     h1 {
       font-size: 36px;
