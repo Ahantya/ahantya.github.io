@@ -57,9 +57,7 @@
       margin: 0 10px;
     }
 .contain {
-	background-color: #fafafa;
 	max-width: 1000px;
-	margin: 0px auto;
 	box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
 	display: flex;
 	
