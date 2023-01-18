@@ -4,3 +4,4 @@ fetch('navbar.html')
     document.getElementById("navbar").innerHTML = data;
   });
 
+ 
