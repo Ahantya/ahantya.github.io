@@ -20,19 +20,6 @@
   <input name="email" type="email" placeholder="Email" required>
   <button type="submit">Send</button>
 </form>
-  
- <script>
-   function doGet(e) {
-  var cors = CorsApp.createForCurrentScript();
-  cors.setAllowedOrigins(["*"]);
-  cors.setAllowedMethods(["GET", "POST", "PUT", "DELETE", "OPTIONS"]);
-  cors.setAllowedHeaders(["Content-Type"]);
-  cors.setMaxAgeSeconds(3600);
-  return ContentService
-    .createTextOutput(JSON.stringify(e.parameters))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-  </script>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwHdsENebIo2nftt_oxbk_2GeH8Kb2WZ-T9-69Cb7Epr8jotpw6FhX6uFL_jF-KCS3HFA/exec'
