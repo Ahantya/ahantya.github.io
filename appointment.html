@@ -46,21 +46,17 @@
       <input type="time" id="time" name="time" required><br>
       <!-- Submit button -->
       <button type="submit" class="submit-button">Submit</button>
-<script>
-  // Get the input element
-  var input = document.getElementById("date");
-
-  // Listen for changes to the input
-  input.addEventListener("change", function() {
+// Listen for changes to the date input
+document.getElementById("date").addEventListener("change", function() {
     // Get the selected date
     var selectedDate = new Date(input.value);
 
     // Get the current date
     var currentDate = new Date();
-    
+
     // Get the difference between the selected date and the current date in milliseconds
     var diff = selectedDate - currentDate;
-    
+
     // Check if the selected date is at least one week in the future
     if (diff < (7 * 24 * 60 * 60 * 1000)) {
       alert("Please select a date at least one week in the future.");
@@ -76,13 +72,20 @@
       alert("Please select a date between Monday to Friday.");
       input.value = "";
     }
-    // Check if the selected date's hour is between 9 and 17 (9am and 5pm)
-    else if (selectedDate.getUTCHours() < 9 || selectedDate.getUTCHours() >= 17) {
+  });
+  
+  // Listen for changes to the time input
+  document.getElementById("time").addEventListener("change", function() {
+    // Get the selected time
+    var selectedTime = new Date("1970-01-01T" + input.value + "Z");
+
+    // Check if the selected time's hour is between 9 and 17 (9am and 5pm)
+    if (selectedTime.getUTCHours() < 9 || selectedTime.getUTCHours() > 17) {
       alert("Please select a time between 9am and 5pm.");
       input.value = "";
     }
   });
-</script>
+
 
 
     
