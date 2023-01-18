@@ -61,17 +61,17 @@ document.getElementById("date").addEventListener("change", function() {
     // Check if the selected date is at least one week in the future
     if (diff < (7 * 24 * 60 * 60 * 1000)) {
       alert("Please select a date at least one week in the future.");
-      input.value = "";
+      this.value = "";
     }
     // Check if the selected date is more than two months in the future
     else if (diff > (60 * 24 * 60 * 60 * 1000)) {
       alert("Please select a date that is not more than two months in the future.");
-      input.value = "";
+      this.value = "";
     }
     // Check if the selected date's day of the week is between Monday (1) and Friday (5)
     else if (selectedDate.getUTCDay() < 1 || selectedDate.getUTCDay() > 5) {
       alert("Please select a date between Monday to Friday.");
-      input.value = "";
+      this.value = "";
     }
   });
   
