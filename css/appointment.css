@@ -4,21 +4,13 @@
       background-color: #E5DDE6;
     }
     .form-container {
-      position: relative; 
-      left: 300px;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      bottom: 70px;
-      /* display: flex;
-      flex-direction: column;
-      align-items: center; */
+      position: absolute;
+    	bottom: 0;
     }
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  bottom: 70px;
+    justify-content: center;
+   align-items: center;
 }
     h1 {
       font-size: 36px;
