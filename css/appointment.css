@@ -18,12 +18,10 @@
       font-size: 36px;
       margin: 20px 0;
     }
-    h2 {
-    	text-align: center;
-    	margin: 0 auto;
-    	position: relative;
+   /*  h2 {
     	top: -10px;
-}    
+	right: 70px;
+}   */  
 
     p {
       font-size: 18px;
