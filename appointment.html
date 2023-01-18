@@ -11,8 +11,8 @@
     <div id="navbar"></div>
   <script src="navbar.js"></script>
 <div class="container">
- <h2>Book an Appointment</h2>
-<img src="creditcard.png" >
+  <h2>Book an Appointment</h2>
+  <img src="creditcard.png" style="clear: both;">
 </div>
   <!-- Appointment form -->
   <div class="form-container">
@@ -46,60 +46,44 @@
       <input type="time" id="time" name="time" required><br>
       <!-- Submit button -->
       <button type="submit" class="submit-button">Submit</button>
-    </form>
-    <script>
-  // Get the input element
-  var input = document.getElementById("date");
-  
-  // Listen for changes to the input
-  input.addEventListener("change", function() {
-    // Get the selected date
-    var selectedDate = new Date(input.value);
-    
-    // Get the current date
-    var currentDate = new Date();
-    
-    // Get the difference between the selected date and the current date
-    var diff = selectedDate - currentDate;
-    
-    // Check if the selected date is at least one week in the future
-    if (diff < 604800000) {
-      alert("Please select a date at least one week in the future.");
-      input.value = "";
-    }
-    else if (diff > 5184000000) {
-      alert("Please select a date that is not more than two months in the future.");
-      input.value = "";
-    }
-  });
-</script>
 <script>
   // Get the input element
   var input = document.getElementById("date");
-  
+
   // Listen for changes to the input
   input.addEventListener("change", function() {
     // Get the selected date
     var selectedDate = new Date(input.value);
 
-    // Get the selected date's day of the week (0 = Sunday, 1 = Monday, etc.)
-    var dayOfWeek = selectedDate.getUTCDay();
-
-    // Get the selected date's hours
-    var hours = selectedDate.getUTCHours();
-
-    // Check if the selected date is a Monday to Friday
-    if (dayOfWeek < 1 || dayOfWeek > 5) {
+    // Get the current date
+    var currentDate = new Date();
+    
+    // Get the difference between the selected date and the current date in milliseconds
+    var diff = selectedDate - currentDate;
+    
+    // Check if the selected date is at least one week in the future
+    if (diff < (7 * 24 * 60 * 60 * 1000)) {
+      alert("Please select a date at least one week in the future.");
+      input.value = "";
+    }
+    // Check if the selected date is more than two months in the future
+    else if (diff > (60 * 24 * 60 * 60 * 1000)) {
+      alert("Please select a date that is not more than two months in the future.");
+      input.value = "";
+    }
+    // Check if the selected date's day of the week is between Monday (1) and Friday (5)
+    else if (selectedDate.getUTCDay() < 1 || selectedDate.getUTCDay() > 5) {
       alert("Please select a date between Monday to Friday.");
       input.value = "";
     }
-    // Check if the selected date is between 9am and 5pm
-    else if (hours < 9 || hours >= 17) {
+    // Check if the selected date's hour is between 9 and 17 (9am and 5pm)
+    else if (selectedDate.getUTCHours() < 9 || selectedDate.getUTCHours() >= 17) {
       alert("Please select a time between 9am and 5pm.");
       input.value = "";
     }
   });
 </script>
+
 
     
 
