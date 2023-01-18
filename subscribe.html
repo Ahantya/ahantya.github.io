@@ -31,12 +31,10 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         if(response.ok){
-          console.log(form.elements);
+          form.reset();
           msg.innerHTML = "Thank you for Subscribing!";
           setTimeout(function(){msg.innerHTML = ""},5000);
-          form.elements.forEach(element => {
-            element.value = "";
-          });
+          })
         }else{
           console.log("Error submitting form");
         }
