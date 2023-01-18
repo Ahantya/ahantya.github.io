@@ -8,9 +8,9 @@
       margin: 0 auto;
       text-align: center;
       bottom: 70px;
-      display: flex;
+      /* display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center; */
     }
     h1 {
       font-size: 36px;
@@ -22,7 +22,7 @@
     }
     /* Style the form */
     form {
-        width: 80%;
+        width: 60%;
         margin-bottom: 20px;
         background-color: #fff;
         padding: 20px;
