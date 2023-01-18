@@ -14,7 +14,6 @@
  <h2>Book an Appointment</h2>
 <img src="creditcard.png" >
 </div>
- <p>Please fill out the form below to schedule your cleaning service:</p>
   <!-- Appointment form -->
   <div class="form-container">
    <form action="https://formsubmit.co/ahantyasharma57@gmail.com" method="POST">
@@ -73,6 +72,34 @@
     }
   });
 </script>
+<script>
+  // Get the input element
+  var input = document.getElementById("date");
+  
+  // Listen for changes to the input
+  input.addEventListener("change", function() {
+    // Get the selected date
+    var selectedDate = new Date(input.value);
+
+    // Get the selected date's day of the week (0 = Sunday, 1 = Monday, etc.)
+    var dayOfWeek = selectedDate.getUTCDay();
+
+    // Get the selected date's hours
+    var hours = selectedDate.getUTCHours();
+
+    // Check if the selected date is a Monday to Friday
+    if (dayOfWeek < 1 || dayOfWeek > 5) {
+      alert("Please select a date between Monday to Friday.");
+      input.value = "";
+    }
+    // Check if the selected date is between 9am and 5pm
+    else if (hours < 9 || hours >= 17) {
+      alert("Please select a time between 9am and 5pm.");
+      input.value = "";
+    }
+  });
+</script>
+
     
 
   </div>
