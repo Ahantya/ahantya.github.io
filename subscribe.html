@@ -30,7 +30,8 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {msg.innerHTML = "Thank you for Subscribing!"
-                        setTimeout(function(){msg.innerHTML=""},5000) form.reset() })
+                        setTimeout(function(){msg.innerHTML=""},5000) form.elements.forEach(element => {
+          element.value = "" }); })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
