@@ -51,4 +51,10 @@ form button {
   height: 70px;
   width: 100px;
   cursor: pointer;
-  
+}
+
+span {
+  color: #2B4162;
+  margin-top: 10px;
+  display: block;
+}
