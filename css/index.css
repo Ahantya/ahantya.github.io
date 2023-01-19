@@ -181,4 +181,9 @@ form button {
   width: 100px;
   cursor: pointer;
 }
+  
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 
