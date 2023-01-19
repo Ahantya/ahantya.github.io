@@ -9,12 +9,10 @@
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script>
 function SubForm (){
-  var formId = event.target.form.id;
-  if (formId === "myForm" || formId === "myForm2") {
     $.ajax({
         url:'https://api.apispreadsheets.com/data/hyO2fzf3uoHA3uts/',
         type:'post',
-        data:$("#"+formId).serializeArray(),
+        data:$("#myForm").serializeArray(),
         success: function(){
           alert("Form Data Submitted :)")
         },
@@ -22,7 +20,6 @@ function SubForm (){
           alert("There was an error :(")
         }
     });
-  }
 }
 </script>
 </head>
