@@ -237,3 +237,8 @@ a .button1 {
   opacity: 0;
   visibility: hidden;
 }
+
+    .hide-button {
+        display: none;
+    }
+
