@@ -27,7 +27,14 @@ body {
     	text-align: center;
     	color: #fff;
 	bottom: 75px;
-}     
+}
+
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #2E4057;
+}
 
     p {
       font-size: 18px;
