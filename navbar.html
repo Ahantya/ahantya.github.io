@@ -68,13 +68,12 @@
   </script>
   
  <script>
-$(document).ready(function(){
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 30) {
-        $('.button1').hide();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+        $('.button1').addClass("hide-button");
     } else {
-        $('.button1').show();
+        $('.button1').removeClass("hide-button");
     }
-  });
 });
+
 </script>
