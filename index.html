@@ -12,7 +12,7 @@ function SubForm (){
     $.ajax({
         url:'https://api.apispreadsheets.com/data/j2bEcHWKNkHGRI1q/',
         type:'post',
-        data:$("#newsletter-form").serializeArray(),
+        data:$("#myForm").serializeArray(),
         success: function(){
           alert("Form Data Submitted :)")
         },
@@ -146,7 +146,7 @@ body {
         <h2>Sign up For Our Newsletter Form!</h2>
         <p style="text-align: center;">Sign up for news, updates, and more! Recieve free discounts!</p>
 
-        <form id="newsletter-form">
+        <form id="myForm">
             <label>Email:</label>
             <input type="email" name="Emails" required>
             <input type="submit" class="signup" value="Sign Up">
@@ -157,7 +157,7 @@ body {
 
 <script>
   // Get the form element
-  var form = document.getElementById("newsletter-form");
+  var form = document.getElementById("myForm");
   
   // Get the email input field
   var email = form.elements.email;
