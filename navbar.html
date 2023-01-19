@@ -67,11 +67,14 @@
   }
   </script>
   
-  <script>
-  window.onscroll = function() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.body.classList.add("scrolled-down");
-  } else {
-    document.body.classList.remove("scrolled-down");
-  }
-  </script>
+ <script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+        $('.button1').hide();
+    } else {
+        $('.button1').show();
+    }
+  });
+});
+</script>
