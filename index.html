@@ -22,6 +22,21 @@ function SubForm (){
     });
 }
 </script>
+    <script>
+function SubForm2 (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/hyO2fzf3uoHA3uts/',
+        type:'post',
+        data:$("#myForm2").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 </head>
 <body style="background-color: #E5DDE6;">
   <!-- Navbar -->
@@ -295,7 +310,7 @@ window.onclick = function(event) {
             <!-- <input type="submit" class="signup" value="Sign Up"> -->
             <p id="email-error" style="display:none; color:red;"></p>
         </form>
-    <button onclick="SubForm()">Subscribe</button>
+    <button onclick="SubForm2()">Subscribe</button>
   </div>
 
 </div>
