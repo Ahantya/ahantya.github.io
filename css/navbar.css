@@ -132,6 +132,12 @@
 
 .container {
   position: relative;
+  .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 }
 
 /* Add a class to the "Book An Appointment" button */
@@ -226,6 +232,11 @@ a .button1 {
   cursor: pointer;
 }
 
-
+@media (max-width:768px) {
+  .container {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
 
 
