@@ -6,11 +6,197 @@
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="icon" href="/icon2.png" alt="Logo">
+	    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/hyO2fzf3uoHA3uts/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+    <script>
+function SubForm2 (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/hyO2fzf3uoHA3uts/',
+        type:'post',
+        data:$("#myForm2").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 </head>
 <body>
 	
 <div id="navbar"></div>	
 <script src="navbar.js"></script>
+	<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Add an image of a bell */
+.bell-image {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    bottom: 5px;
+}
+
+  input[type=email] {
+    width: 450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+.signup {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #F5F0F6;
+  background-color: #00bfff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+}
+</style>
+
+<!-- Trigger/Open The Modal -->
+<button class="button2"id="myBtn">Sign Up For Our Newsletter</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <img class="bell-image" src="bell.png" alt="bell">
+        <span class="close">&times;</span>
+        <h2>Sign up For Our Newsletter Form!</h2>
+        <p style="text-align: center;">Sign up for news, updates, and more! Recieve free discounts!</p>
+
+        <form id="myForm">
+            <label>Email:</label>
+            <input type="email" name="Emails" required>
+            <!-- <input type="submit" class="signup" value="Sign Up"> -->
+            <p id="email-error" style="display:none; color:red;"></p>
+        </form>
+      <button class="signup" onclick="SubForm()">Subscribe</button>
+    </div>
+</div>
+
+<script>
+  // Get the form element
+  var form = document.getElementById("myForm");
+  
+  // Get the email input field
+  var email = form.elements.email;
+  
+  // Get the error message element
+  var emailError = document.getElementById("email-error");
+  
+  // Regular expression to match a valid email address
+  var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+  // Listen for the submit event
+  form.addEventListener("submit", function(event) {
+    // Check if the email input field value matches the pattern of a valid email
+    if (!emailRegex.test(email.value)) {
+      // If the input is invalid, prevent the form from being submitted
+      event.preventDefault();
+      
+      // Show the error message
+      emailError.style.display = "block";
+      emailError.textContent = "Please enter a valid email address.";
+    }
+  });
+</script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 
@@ -115,7 +301,7 @@
             <!-- <input type="submit" class="signup" value="Sign Up"> -->
             <p id="email-error" style="display:none; color:red;"></p>
         </form>
-    <button onclick="SubForm()">Subscribe</button>
+    <button onclick="SubForm2()">Subscribe</button>
   </div>
 
 </div>
