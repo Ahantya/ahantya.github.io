@@ -98,7 +98,7 @@
 }
 
 .button1 {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 20px;
   width: 150px;
@@ -117,7 +117,7 @@
   transition: opacity 0.5s, visibility 0.5s ease-in-out;
 }
 .button2 {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 220px;
   width: 150px;
@@ -233,12 +233,5 @@ a .button1 {
 /* 	transition: transform 0.3s ease; */
 }
 
-.scrolled-down .button1 .button2 {
-  opacity: 0;
-  visibility: hidden;
-}
 
-    .hide-button {
-        display: none;
-    }
 
