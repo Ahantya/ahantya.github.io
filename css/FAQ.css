@@ -5,6 +5,9 @@ body{
 .faq-heading{
     border-bottom: #777;
     padding: 20px 60px;
+    font-family: 'Allura', cursive;
+    color: #fff;
+    text-align: center;
 }
 .faq-container{
     display: flex;
