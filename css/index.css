@@ -376,6 +376,14 @@ a .button1 {
     width: 80%;
     transform: scale(0.8);
   }
+  .button1 {
+   position: relative !important;
+   bottom: 30px !important;
+   height: 50px !important;
+   width: 110px !important;
+  }
+}
+
 }
 
 .modal-container {
