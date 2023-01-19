@@ -97,7 +97,7 @@
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-/* .button1 {
+.button1 {
   position: relative;
   top: 10px;
   left: 330px;
@@ -112,7 +112,7 @@
   cursor: pointer;
   font-size: 1em;
   border-radius: 5px;
-} */
+} 
 .button2 {
   position: absolute;
   top: 20px;
@@ -226,18 +226,6 @@ a .button1 {
   cursor: pointer;
 }
 
-
-@media only screen and (max-width: 500px) {
-  nav {
-    width: 80% !important;
-  }
-  .button1 {
-   position: relative !important;
-   bottom: 30px !important;
-   height: 50px !important;
-   width: 110px !important;
-  }
-}
 
 
 
