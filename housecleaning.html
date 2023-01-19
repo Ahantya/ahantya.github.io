@@ -224,9 +224,65 @@ body {
     <a href="/contact"><button class="button4">Contact Us</button></a>
   </div>
 </body>
-  <footer>
-   <p style="font-family: 'Josefin Sans', sans-serif;text-align: center;"> Copyright ©TheSpotlessSweepers | All Rights Reserved</p>
-   <p style = "font-family: 'Josefin Sans', sans-serif;text-align: center;"> Copyright &copy; Ahantya Sharma</p>
+ <footer>
+   <p style="font-family: 'Josefin Sans', sans-serif;text-align: center;"> Copyright ©TheSpotlessSweepers & Ahantya Sharma | All Rights Reserved</p>
+   <!-- <p style = "font-family: 'Josefin Sans', sans-serif;text-align: center;"> Copyright &copy; Ahantya Sharma</p> -->
+   <p style = "font-family: 'Josefin Sans', sans-serif;text-align: center;"> Favicon Generated Freely with Icons8.com and Joe Sharma's Image was used through Adobe Stock Images<p>
    <p style = "font-family: 'Josefin Sans', sans-serif;text-align: center;">Credit Card, Bathroom, House, Couch, Window, Contact ID, and Help Images were Generated Freely with Icons8.com <p>
   	</footer>
+   <script>
+  // Get the form element
+  var form = document.getElementById("myForm");
+  
+  // Get the email input field
+  var email = form.elements.email;
+  
+  // Get the error message element
+  var emailError = document.getElementById("email-error");
+  
+  // Regular expression to match a valid email address
+  var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+  // Listen for the submit event
+  form.addEventListener("submit", function(event) {
+    // Check if the email input field value matches the pattern of a valid email
+    if (!emailRegex.test(email.value)) {
+      // If the input is invalid, prevent the form from being submitted
+      event.preventDefault();
+      
+      // Show the error message
+      emailError.style.display = "block";
+      emailError.textContent = "Please enter a valid email address.";
+    }
+  });
+</script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </html>
