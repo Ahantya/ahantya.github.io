@@ -281,7 +281,7 @@ form button {
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
-.button1 {
+/* .button1 {
   position: relative;
   top: 10px;
   left: 330px;
@@ -296,7 +296,7 @@ form button {
   cursor: pointer;
   font-size: 1em;
   border-radius: 5px;
-}
+} */
 .button2 {
   position: absolute;
   top: 20px;
