@@ -27,14 +27,7 @@ body {
     	text-align: center;
     	color: #fff;
 	bottom: 75px;
-}
-
-h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  color: #2E4057;
-}
+}     
 
     p {
       font-size: 18px;
@@ -42,7 +35,7 @@ h3 {
     }
     /* Style the form */
     form {
-       /*  width: 55%;
+        width: 55%;
         margin-bottom: 20px;
         background-color: #fff;
         padding: 50px;
@@ -50,7 +43,7 @@ h3 {
         box-shadow: 0px 0px 10px #000;
 	margin-left: 20px;
 	position: relative;
-	bottom: 72px; */
+	bottom: 72px;
     }
     input, select, textarea {
       width: 100%;
