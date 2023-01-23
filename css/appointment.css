@@ -8,6 +8,7 @@ body {
     .form-container {
       position: relative;
     	bottom: 0;
+      left: 260px;
     }
     .container {
   	display: flex;
@@ -19,6 +20,7 @@ body {
       font-size: 20px;
       margin: 20px 0;
       font-family: 'Josefin Sans', sans-serif;
+      text-align: center;
     }
      h2 {
     	font-family: 'Allura', cursive;
