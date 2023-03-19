@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=https://spotless-sweepers.ahantyasharma.repl.co">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=https://spotless-sweepers.ahantyasharma.repl.co">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=https://spotless-sweepers.ahantyasharma.repl.co">
+<link rel="manifest" href="favicon/site.webmanifest?v=https://spotless-sweepers.ahantyasharma.repl.co">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=https://spotless-sweepers.ahantyasharma.repl.co" color="#0077b6">
+<link rel="shortcut icon" href="favicon/favicon.ico?v=https://spotless-sweepers.ahantyasharma.repl.co">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Spotless Sweepers</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/522a86a233.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<section class="newsletterheader">
+		<nav>
+			<a href="index.html"> <img src="images/icon3.png" width="75%" height="50%"> </a>
+			<div class="nav-links" id="navLinks">
+				<i class="far fa-times-circle" onclick="hideMenu()"></i>
+				<ul>
+					<li> <a href="index.html"> Home </a></li>
+					<li> <a href="about.html"> About Us </a></li>
+					<li> <a href="contact.html"> Contact </a></li>
+					<li> <a href="faq.html"> FAQ </a></li>
+					<li> <a href="index.html#services"> Cleaning Services </a></li>
+					<li> <a href="newsletter.html"> Newsletter Form</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1> Subscribe to the Newsletter! </h1>
+	</section>
+
+<!----- book content ---->
+
+	<section class="contact-us">
+  	<div class="row">
+    	<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5> Circle C Ranch </h5>
+						<p> Austin, Texas </p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5> <a style="color: #0077B6;" href="tel:512-264-5172"> 512-512-5125 </a> </h5>
+						<p> Available from 10 AM to 6 PM </p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<span>
+						<h5> <a style="color: #0077B6;" href="mailto:ahantyasharma57@gmail.com">TheSSS@gmail.com</a> </h5>
+
+						<p> Email Us! </p>
+					</span>
+				</div>
+
+				
+			</div>
+
+			<div class="contact-col"> 
+				<h1 style="margin-bottom: 30px; margin-top: -20px; text-align: center;"> Subscribe Here </h1>
+<!-- 			 <form id="myForm">
+ 				<input type="hidden" name="_next" value="https://spotless-sweepers.ahantyasharma.repl.co/thanks.html"> 
+				<input type="hidden" name="_captcha" value="false">
+				<input type="text" name="email" placeholder="Enter your email address" required> -->
+				    <form id="myForm">
+
+            <label>Email List</label>
+						<input type="email" name="Email List" required=""/>
+            <!-- <input type="submit" class="signup" value="Sign Up"> -->
+							<p id="email-error" style="display:none; color:#0066b6; font-size: 20px;"></p>
+          
+        </form>
+				
+				<button onclick="SubForm()" type="submit" class="him-btn blue-btn"> Subscribe! </button>
+				
+			</form>
+			<span id="thank-you-message" style="display:none;">Thank you for subscribing!</span>
+			
+			
+			
+			</div>
+		</div>
+	</section>
+
+
+	
+	<script src="script.js"></script>
+
+	<!--- Call to Action --->
+
+	<section class="cta">
+		<h1> Book an Appointment! </h1>
+		<a href="Appointment.html" class="him-btn"> Book our Cleaning Services </a>
+
+	</section>
+
+
+	<!--- Footer --->
+	<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row2">
+  	 		<div class="columni">
+  	 			<h4>About</h4>
+  	 			<ul>
+  	 				<li><a href="about.html">About Us</a></li>
+  	 				<li><a href="index.html#services">Our Services</a></li>
+  	 				<li><a href="newsletter.html">Subscribe!</a></li>
+						<li><a href="book.html">Book with Us</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="columni">
+  	 			<h4>Need Help?</h4>
+  	 			<ul>
+  	 				<li><a href="faq.html">FAQ</a></li>
+  	 				<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="https://docs.google.com/document/d/1xdZmQ_6xITJFP7QYNyWHoMsknByDycdQmVZasNAfTR8/edit?usp=sharing">Copyright Information | All Rights Reserved</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="columni">
+  	 			<h4>Our Services</h4>
+  	 			<ul>
+  	 				<li><a href="furniture.html">Furniture Refurbishing</a></li>
+  	 				<li><a href="bathroom.html">Bathroom Cleaning</a></li>
+  	 				<li><a href="window.html">Window Cleaning</a></li>
+  	 				<li><a href="house.html">Full-House Cleaning</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="columni">
+  	 			<h4> Our Social Media</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+  	 				<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+	
+
+
+	<!-----Javscript for Toggle Menu -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu() {
+			navLinks.style.right = "0";
+			// navLinks.style.display = "block";
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+			// navLinks.style.display = "none";
+
+		}
+
+	</script>
+	
+<!--  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw2Vb-VhzZHOgRflcHSpHQjaEVnG-1H3Ddfm5RX5IqBOk9IV3t1SwXBbcRmuIIoS6Xx/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>  -->
+
+<script>
+function SubForm() {
+  var email = document.getElementsByName("Email List")[0].value;
+  var error = document.getElementById("email-error");
+  var thankYouMessage = document.getElementById("thank-you-message");
+
+  // Check if email is valid
+  if (!/^\S+@\S+\.\S+$/.test(email)) {
+    error.style.display = "block";
+    error.textContent = "Please enter a valid email address!";
+    setTimeout(() => {
+        error.style.display = "none";
+    }, 2000);
+    return;
+}
+
+  // Submit form and show thank you message
+  $.ajax({
+    url: 'https://api.apispreadsheets.com/data/5C0UU4JOY4Z4N8cs/',
+    type: 'post',
+    data: $("#myForm").serializeArray(),
+    success: function() {
+       /*$("#thank-you-message").fadeIn(1000);
+      setTimeout(function() {
+        $("#thank-you-message").fadeOut(1000);
+      }, 3000); */
+			thankYouMessage.style.display = "block";
+      setTimeout(function() {
+        thankYouMessage.style.display = "none";
+      }, 3000);
+    },
+    error: function() {
+      alert("There was an error :(")
+    }
+  });
+}
+</script>	
+
+<!-- <script>
+	function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/5C0UU4JOY4Z4N8cs/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+		
+}
+</script> -->
+
+</body>
+
+</html>
