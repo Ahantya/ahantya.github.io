@@ -113,17 +113,19 @@
 				<label for="date">Enter the date you want to book for ⬇️</label><br>
 				<input type="date" name="date" placeholder="" min="" required>
 				<label for="date">Enter the time you want to book for ⬇️</label><br>
-				<input type="time" name="time" min="10:00" max="18:00" required>
+				<input type="time" name="time" min="10:00" max="18:00" step="3600" required>
 				<label for="date">Enter the package you want to book ⬇️</label><br>
-      <select id="service" name="service">
-        <option value="Full House Package">Full House Package</option>
-        <option value="Window Cleaning">Window Cleaning</option>
-        <option value="Bathroom Cleaning">Bathroom Cleaning</option>
-        <option value="Furniture Refurbishing">Furniture Refurbishing </option>
-      </select>
+<select id="service" name="service" required>
+  <option value="" disabled selected>Select a service</option>
+  <option value="Full House Package">Full House Package</option>
+  <option value="Window Cleaning">Window Cleaning</option>
+  <option value="Bathroom Cleaning">Bathroom Cleaning</option>
+  <option value="Furniture Refurbishing">Furniture Refurbishing</option>
+</select>
 				<br>
 				<label for="date">How often do you want our cleaning service?⬇️</label><br>
-      <select id="service" name="service">
+      <select id="service" name="service" required>
+	<option value="" disabled selected>Select how often</option>
         <option value="One Time">Just Once</option>
         <option value="Weekly">Once a Week (beginning from date selected)</option>
         <option value="Biweekly">Twice a Week (5 days separated) </option>
