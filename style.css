@@ -16,10 +16,6 @@ html {
 	background-color: #0077B6;
 }
 
-h1 {
-	font-weight: bold;
-}
-
 .header {
 	min-height: 100vh;
 	width: 100%;
@@ -184,13 +180,13 @@ nav .fa-regular fa-circle-xmark {
 h1 {
 	margin-top: 40px;
 	font-size: 36px;
-	font-weight: 600;
+	font-weight: 800;
 } 
 
 p{
 	color: black;
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 22px;
 	padding: 10px;
 }
@@ -212,7 +208,7 @@ p{
 }
 h3 {
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 10px 0;
 }
 
@@ -251,7 +247,7 @@ h3 {
 
 .layer h3 {
 	width: 100%;
-	font-weight: 500;
+	font-weight: 600;
 	color: #fff;
 	font-size: 25px;
 	bottom: 50%;
@@ -323,7 +319,7 @@ h3 {
 
 .review-col p {
 	padding: 0;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .review-col h3 {
@@ -392,7 +388,7 @@ ul{
 }
 .columni h4{
 	margin-bottom: 35px;
-	font-weight: 500;
+	font-weight: 600;
 	position: relative;
 	font-size: 18px;
 	color: #ffffff;
@@ -414,7 +410,7 @@ ul{
 .columni ul li a{
 	color: #fff;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 	display: block;
 	font-size: 16px;
 	text-transform: capitalize;
@@ -540,7 +536,7 @@ ul{
 
 .f-left h2 {
 	color: #222;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 30;
 }
 
@@ -650,7 +646,7 @@ ul{
 	font-size: 20px;
 	margin-bottom: 5px;
 	color: #555;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .contact-col input, .contact-col textarea {
